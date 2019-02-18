@@ -1,0 +1,124 @@
+@import "common";
+@import "methods";
+@import "subscribe-news";
+
+.article-news {
+    max-width: 1020px;
+    display: inline-block;
+    padding-top: 30px;
+    @include breakpoint (960) {
+        display: block;
+    }
+    h2 {
+        font-size: 42px;
+        font-weight: 700;
+        color: #333;
+        line-height: 1.05;
+        margin-top: 0;
+        margin-bottom: 25px;
+        @include breakpoint (960) {
+            font-size: 38px;
+        }
+        @include breakpoint (479) {
+            font-size: 25px;
+        }
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: $thin;
+        text-align: justify;
+        color: #484848;
+        @include breakpoint (960) {
+            font-size: 22px;
+        }
+        @include breakpoint (479) {
+            font-size: 15px;
+        }
+        a {
+            color: #484848;
+            text-decoration: underline;
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+    img {
+        float: left;
+        padding-right: 30px;
+        @include breakpoint (960) {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            float: none;
+            padding: 0;
+        }
+    }
+    table {
+        width: 400px;
+        @include breakpoint (479) {
+            width: 290px;
+        }
+        .center {
+            text-align: center;
+            font-size: 16px;
+            font-weight: $thin;
+            @include breakpoint (960) {
+                font-size: 22px;
+            }
+            @include breakpoint (479) {
+                font-size: 15px;
+            }
+        }
+        td {
+            a {
+                font-size: 16px;
+                font-weight: $thin;
+                color: #333;
+                padding-left: 25px; 
+                text-decoration: underline;
+                &:hover {
+                    color: $orange;
+                }
+                @include breakpoint (960) {
+                    font-size: 22px;
+                }
+                @include breakpoint (479) {
+                    font-size: 15px;
+                }
+            }
+        }
+        th {
+            &:first-child {
+                width: 90px;
+            }
+        }
+        tr {
+            th {
+                font-size: 16px;
+            }
+            .left {
+                text-align: left !important;
+                padding-left: 25px;
+            }
+            height: 35px;
+            &:first-child {
+                height: 50px;
+            }
+            &:nth-child(2n) {
+                background-color: #fff;
+            }
+            @include breakpoint (960) {
+                font-size: 22px;
+            }
+            @include breakpoint (479) {
+                font-size: 15px;
+            }
+        }
+    }
+    table, tr, th, td{
+        border: 1px solid #d3d3d3;
+        border-collapse: collapse;
+    }
+}
+

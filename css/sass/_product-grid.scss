@@ -1,0 +1,238 @@
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    padding-bottom: 80px;
+    @include breakpoint (960) {
+        justify-content: flex-start;
+    }
+    @include breakpoint (479) {
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+    .product-item {
+        position: relative;
+        width: 20%;
+        text-align: center;
+        color: #333;
+        background-color: $white;
+        @include box-shadow(inset 0 0 0 2px #fcfcfc);
+        outline: 1px solid #f4f4f4;
+        outline-offset: -2px;
+        @include breakpoint(1800){
+            width: 25%;
+        }
+        @include breakpoint(1440){
+            width: 33%;
+        }
+        @include breakpoint(1180){
+            width: 50%;
+        }
+        &:hover {
+            .product-wrapper {
+                pointer-events:auto;
+                visibility: visible;
+                @include opacity(1);
+                @include firefox(){
+                    display: block;
+                }
+                ul {
+                    @include transform(scale(1, 1));
+                }
+            }
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+            display: inline-block;
+            &.product-grid-image {
+                height: 300px;
+                @include breakpoint(960){
+                    height: 230px;
+                }
+                @include breakpoint(479){
+                    height: 170px;
+                }
+            }
+        }
+        .default {
+            margin-top: 15px;
+            @include breakpoint(960){
+                width: 200px;
+            }
+            @include breakpoint(479){
+                width: 140px;
+            }
+        }
+        .product-grid-name {
+            font-size: 17px;
+            line-height: 1.36;
+            font-weight: $bold;
+            padding-right: 15px;
+            padding-left: 15px;
+            letter-spacing: -0.7px ;
+            @include breakpoint(960){
+                font-size: 16px;
+            }
+            @include breakpoint(479){
+                font-size: 14.5px;
+            }
+        }
+        .image-2 {
+            height: auto;
+            margin-top: 25px;
+        }
+        .product-wrapper {
+            position: absolute;
+            right: -20px;
+            left: -20px;
+            top: -10px;
+            visibility: hidden;
+            @include opacity (0);
+            background-color: #fff;
+            @include box-shadow(0 0 20px rgba(0,0,0,0.15));
+            @include transition(opacity .3s);
+            z-index: 1;
+            @include breakpoint(960){
+                display: none !important;
+            }
+            @include firefox(){
+                display: none;
+            }
+            .product-grid-image {
+                height: 310px;
+                @include breakpoint(960){
+                    height: 230px;
+                }
+                @include breakpoint(479){
+                    height: 170px; 
+                }
+            }
+            ul {
+                max-width: 315px;
+                padding: 0;
+                padding-bottom: 25px;
+                display: flex;
+                flex-wrap: wrap;
+                margin: auto;
+                /*@include transition(transform .3s);*/
+                @include transform(scale(1, 0));
+                @include transform-origin(top);
+                li {
+                    width: 35px;
+                    height: 35px;
+                    list-style: none;
+                    display: block;
+                    margin-top: 8px;
+                    margin-left: 8px;
+                    margin-right: 9px;
+                    @include border-radius(50%);
+                    label {
+                        cursor: pointer;
+                    }
+                    span {
+                        width: 37px;
+                        height: 37px;
+                        display: block;
+                        @include border-radius(50%);
+                        border: 1px solid #cacaca;
+                    }
+                    &:hover,
+                    &.checked {
+                        span {
+                            border: 2px solid #fff;
+                            box-shadow: 0 0 0 2px $orange;
+                        }
+                    }
+                }  
+            }
+            .product-grid-name {
+                color: $orange;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+        .product-grid-price {
+            margin-bottom: 12px;
+            margin-top: -5px;
+            color: #333;
+            span {
+                font-size: 25px;
+                font-weight:600;
+                &:after {
+                    content: ' грн';
+                    font-size: 19px;
+                    @include breakpoint(960) {
+                        font-size: 16px;
+                    }
+                    @include breakpoint(479) {
+                        font-size: 13px;
+                    }
+                }
+                @include breakpoint(479) {
+                    font-size: 16.5px;
+                }
+            }
+        }
+        .description {
+            text-align: left;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .product-next-page {
+        @include opacity(0.7);
+        &:hover {
+            @include opacity(1);
+        }
+        .next-page-icon {
+            &:before {
+                content: '';
+                display: block;
+                background-image: url('/images/smart/icons/next-page-2.png');
+                background-size: contain;
+                width: 45px;
+                height: 49px;
+                margin: auto;
+                margin-bottom: 5px;
+                background-repeat: no-repeat;
+            }
+        }
+        &:hover {
+            .next-page-icon {
+                &:before {
+                    content: '';
+                    display: block;
+                    background-image: url("/images/smart/icons/orange-next.png");
+                }
+            }
+        }
+        .image-2 {
+            margin: 0;
+        }
+    }
+.sticker {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        &:before {
+            content: '';
+            display: block;
+            background-image: url('/images/smart/icons/discount-product.png');
+            width: 50px;
+            height: 56px;
+            @include breakpoint (479) {
+                width: 35px;
+                height: 41px;
+                background-size: cover;
+            }
+        }
+        p {
+            color: $orange;
+            font-family: $family;
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+}

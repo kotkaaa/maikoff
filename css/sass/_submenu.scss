@@ -1,0 +1,37 @@
+/*
+WebLife CMS
+Created on 25.07.2018, 16:38:52
+Developed by http://weblife.ua/
+*//* 
+    Created on : 25.07.2018, 16:38:52
+    Author     : user5
+*/
+
+.submenu {
+    @extend .filters;
+    .section {
+        .section-toggle {
+            white-space: normal;
+            &:not(.toggle-ready) {
+                &:after {
+                    content: none;
+                }
+                &.opened {
+                    color: $orange;
+                }
+            }
+        }
+        .section-wrap {
+            max-height: none;
+        }
+        .list {
+            li {
+                &.opened {
+                    > a {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}

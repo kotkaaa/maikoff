@@ -1,0 +1,391 @@
+@import "common";
+
+.ordering-result {
+    .result-wrapper {
+        max-width: 900px;
+        margin-left: 180px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        .thanks {
+            display: flex;
+            align-items: flex-end;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            @include breakpoint (1150) {
+                justify-content: center;
+                align-items: center;
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+            .icon {
+                padding-right: 35px;
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    background-image: url(/images/smart/icons/thanks-for.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 80px;
+                    height: 100px;
+                    @include breakpoint (960) {
+                        width: 48px;
+                        height: 60px;
+                    }
+                }
+            }
+            .thanks-info {
+                h3 {
+                    font-size: 32px;
+                    font-weight: $bold;
+                    color: #f15a23;
+                    margin-bottom: 0;
+                    @include breakpoint (960) {
+                        font-size: 30px;
+                    }
+                    @include breakpoint (479) {
+                        font-size: 20px;
+                    }
+                }
+                p {
+                    font-size: 20px;
+                    font-weight: $bold;
+                    color: #333;
+                    margin-top: 10px;
+                    @include breakpoint (479) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .inline {
+            display: flex;
+            justify-content: space-between;
+            .your-orders {
+                max-width: 625px;
+                width: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
+                @include breakpoint (1150) {
+                    margin: 0 auto;
+                    margin-bottom: 55px;
+                }
+                @include breakpoint (479) {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                .information {
+                    font-size: 17px;
+                    font-weight: $thin;
+                    color: #333;
+                    line-height: 1.5;
+                    margin-bottom: 40px;
+                    @include breakpoint (960) {
+                        font-size: 20px;
+                    }
+                    @include breakpoint (479) {
+                        font-size: 14px;
+                        margin-top: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+                .order-edit {
+                    display: flex;
+                    justify-content: space-between;
+                    p {
+                        font-size: 18px;
+                        font-weight: $bold;
+                        color: #333;
+                        line-height: 1.65;
+                        margin: 0;
+                        @include breakpoint (960) {
+                            font-size: 22px;
+                        }
+                        @include breakpoint (479) {
+                            font-size: 15px;
+                        }
+                        span {
+                            font-size: 21px;
+                            font-weight: $bold;
+                            color: #333;
+                            &:after {
+                                content: ' грн';
+                                display: inline-block;
+                                font-size: 18px;
+                                @include breakpoint (479) {
+                                    font-size: 12px;
+                                }
+                            }
+                            @include breakpoint (479) {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+                .order-item {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    border-top: 1px solid #d3d3d3;
+                    @include breakpoint (960) {
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                    }
+                    @include breakpoint (479) {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                    img {
+                        vertical-align: top;
+                        width: 80px;
+                    }
+                    .order-info {
+                        padding-left: 35px;
+                        h4 {
+                            font-size: 16px;
+                            color: #333;
+                            line-height: 1.9;
+                            font-weight: 500;
+                            margin: 0;
+                            @include breakpoint (960) {
+                                font-size: 20px;
+                                margin-bottom: 0;
+                            }
+                            @include breakpoint (479) {
+                                font-size: 14px;
+                            }
+                            a {
+                                color: inherit;
+                                &:hover {
+                                    color: $orange;
+                                }
+                            }
+                        }
+                        ul {
+                            padding: 0;
+                            margin-top: 5px;
+                            @include breakpoint (960) {
+                                margin: 0;
+                                margin-bottom: 5px;
+                            }
+                            li {
+                                list-style: none;
+                                span {
+                                    font-size: 14px;
+                                    font-weight: $thin;
+                                    line-height: 1.5;
+                                    color: #505050;
+                                    @include breakpoint (960) {
+                                        font-size: 18px;
+                                    }
+                                    @include breakpoint (479) {
+                                        font-size: 12px;
+                                    }
+                                }
+                                .will-hide {
+                                    @include breakpoint (960) {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .order-price {
+                        position: absolute;
+                        right: 20px;
+                        top: 25px;
+                        .price {
+                            font-size: 17px;
+                            font-weight: $bold;
+                            color: #333;
+                            line-height: 1.2;
+                            &:after {
+                                content: ' грн';
+                                display: inline-block;
+                                font-weight: 500;
+                                font-size: 15px;
+                                line-height: 1.4;
+                                @include breakpoint (960) {
+                                    font-size: 18px;
+                                }
+                                @include breakpoint (479) {
+                                    font-size: 12px;
+                                }
+                            }
+                            @include breakpoint (960) {
+                                font-size: 25px;
+                            }
+                            @include breakpoint (479) {
+                                font-size: 16px;
+                            }
+                        }
+                        @include breakpoint (960) {
+                            position: inherit;
+                        }
+                    }
+                }
+            }
+        }
+        .work-graphic {
+            max-width: 179px;
+            p {
+                font-size: 16px;
+                font-weight: $thin;
+                color: #333;
+                line-height: 1.5;
+                a {
+                    color: #333;
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style: none;
+                    a {
+                        font-size: 18px;
+                        font-weight: $thin;
+                        color: #333;
+                        line-height: 1.7;
+                        &:hover {
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+            @include breakpoint (1150) {
+                display: none;
+            }
+        }
+        @include breakpoint (1150) {
+            padding-left: 20px;
+            margin-bottom: 100px;
+            padding-right: 20px;
+            margin: auto;
+        }
+    }
+}
+
+.subscribe-us {
+    background-color: $dark-grey;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    @include breakpoint (1190) {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    @include breakpoint (479) {
+        padding-top: 21px;
+        padding-bottom: 15px;
+    }
+    .subscribe-wrapper {
+        max-width: 1235px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include breakpoint (1190) {
+            justify-content: space-evenly;
+        }
+        @include breakpoint (960) {
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        p {
+            max-width: 440px;
+            font-size: 19px;
+            font-weight: $thin;
+            line-height: 1.6;
+            color: #d4d4d4;
+            @include breakpoint (960) {
+                font-size: 22px;
+                max-width: 100%;
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+            @include breakpoint (479) {
+                font-size: 14px;
+            }
+        }
+        form {
+            display: flex;
+            @include breakpoint (1190) {
+                flex-direction: column;
+            }
+            @include breakpoint (960) {
+                width: 100%;
+            }
+            .email {
+                width: 408px;
+                height: 65px;
+                border: none;
+                border-radius: 0px !important;
+                background-color: #969696;
+                padding-left: 30px;
+                padding-right: 30px;
+                font-size: 24px;
+                font-weight: $bold;
+                color: #fff;
+                line-height: 1.25;
+                @include breakpoint (1190) {
+                    width: 440px;
+                    margin-bottom: 10px;
+                }
+                @include breakpoint (960) {
+                    font-size: 30px;
+                    text-align: center;
+                    width: 100%;
+                    height: 75px;
+                    margin-bottom: 5px;
+                }
+                @include breakpoint (479) {
+                    height: 50px;
+                    margin-bottom: 0;
+                    font-size: 20px;
+                }
+                @include placeholder () {
+                    color: #fff;
+                }
+            }
+            .btn-subscribe-us {
+                width: 325px;
+                max-width: 100%;
+                height: 65px;
+                color: #d3d3d3;
+                border: 3px solid #969696;
+                text-transform: uppercase;
+                font-size: 21px;
+                font-weight: 900;
+                letter-spacing: 3px;
+                background: transparent;
+                border-radius: 0px !important;
+                font-family: $family;
+                margin-left: 25px;
+                @include breakpoint (1190) {
+                    width: 440px;
+                    margin: 0;
+                }
+                @include breakpoint (960) {
+                    width: 100%;
+                    margin-top: 18px;
+                    height: 75px;
+                    font-size: 24px;
+                }
+                @include breakpoint (479) {
+                    height: 50px;
+                    font-size: 15px;
+                    font-weight: $bold;
+                    margin: auto;
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}

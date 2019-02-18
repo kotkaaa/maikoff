@@ -1,0 +1,195 @@
+.product-grid-print {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    @include breakpoint (960) {
+        justify-content: space-around;
+        width: 100%;
+    }
+    @include breakpoint (479) {
+        padding-top: 25px;
+    }
+    .product-item {
+        position: relative;
+        width: 180px;
+        text-align: center;
+        color: #333;
+        margin-right: 38px;
+        margin-bottom: 90px;
+        @include breakpoint(960) {
+            margin-right: 18px;
+            margin-left: 18px;
+            margin-bottom: 45px;
+        }
+        @include breakpoint (479) {
+            margin-bottom: 27px;
+            margin-right: 10px;
+            margin-left: 10px;
+            width: 120px;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .default {
+            overflow: hidden;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            width: 190px;
+            height: 190px;
+            @include breakpoint(960) {
+                width: 172px;
+                height: 172px;
+                margin-bottom: 10px;
+            }
+            @include breakpoint(479) {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 0;
+            }
+        }
+        .product-grid-name {
+            font-size: 19px;
+            line-height: 1.36;
+            font-weight: 500;
+            padding-right: 15px;
+            padding-left: 15px;
+            @include breakpoint (960) {
+                font-size: 22px;
+            }
+            @include breakpoint(479) {
+                font-size: 14.5px;
+            }
+        }
+        &:hover {
+            .product-wrapper {
+                pointer-events:auto;
+                visibility: visible;
+                @include opacity(1);
+                @include transform (translate3d(0, 0, 0));
+                @include border-radius(5px);
+            }
+            .product-grid-name {
+                color: $orange;
+            }
+        }
+        .image-2 {
+            max-width: 265px;
+            height: auto;
+            margin-top: 15px;
+        }
+        .product-wrapper {
+            position: absolute;
+            width: 275px;
+            right: 0;
+            left: -48px;
+            top: -91px;
+            visibility: hidden;
+            @include opacity (0);
+            background-color: #fff;
+            @include transform(translate3d(0,0,0) scale(0.85));
+            @include box-shadow(0 0 20px rgba(0,0,0,0.15));
+            @include transition(all .3s);
+            z-index: 1;
+            @include breakpoint(960){
+                display: none;
+            }
+            ul {
+                max-width: 235px;
+                text-align: left;
+                padding: 0;
+                padding-bottom: 25px;
+                margin: auto;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    list-style: none;
+                    font-size: 14px;
+                    line-height: 1.57;
+                    font-weight: $thin;
+                    padding-right: 12px;
+                    padding-left: 12px;
+                    a {
+                        max-width: 150px;
+                    }
+                    &:hover {
+                        background-color: $footer-background;
+                        color: $orange;
+                        a {
+                            color: $orange;
+                        }
+                    }
+                }
+                span {
+                    width: 85px;
+                    text-align: right;
+                }
+            }
+        }
+    }
+    .product-next-page {
+        margin-top: -17px;
+        @include breakpoint(960) {
+            margin-top: 0;
+        }
+        @include breakpoint(479) {
+            margin-top: -17px;
+        }
+        .next-page-icon {
+            img {
+                @include opacity (0.35);
+                @include transition(.4s all);
+                &:hover {
+                    @include opacity(0.35);
+                    @include transition(.4s ease-in-out);
+                }
+            }
+            span {
+                width: 61px;
+                height: 61px;
+                position: absolute;
+                z-index: 10;
+                right: 30%;
+                top: 25%;
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 61px;
+                    height: 61px;
+                    background-image: url(/images/smart/icons/next-page.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    @include breakpoint(479) {
+                        width: 41px;
+                        height: 41px;
+                    }
+                }
+                @include breakpoint(960) {
+                    right: 32%;
+                    top: 20%;
+                }
+                @include breakpoint(479) {
+                    width: 41px;
+                    height: 41px;
+                    top: 27%;
+                }
+            }
+/*            &:hover {
+                span {
+                    @include transform (translate3d(0, 0, 0));
+                    visibility: visible;
+                    opacity: 1;
+                }
+                img {
+                    @include opacity (0.35);
+                }
+            }*/
+            &:hover {
+                .product-grid-name {
+                    color: $orange;
+                }
+            }
+        }
+    }
+}

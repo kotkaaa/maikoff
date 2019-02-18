@@ -1,0 +1,198 @@
+.product-slider {
+    padding-bottom: 90px;
+    @include breakpoint (479) {
+        padding-bottom: 45px;
+    }
+}
+.product-slider,
+.product-slider-2 {
+    @include breakpoint (960) {
+        padding-top: 10px;
+    }
+    @include breakpoint (479) {
+        padding-top: 0;
+    }
+    .h2-product-slider-1 {
+        margin-top: 15px;
+        font-size: 32px;
+        line-height: 0.8;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0.7px;
+        @include breakpoint(960){
+            font-size: 34px;
+        }
+        @include breakpoint(479) {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+    }
+    .h2-product-slider-2 {
+        font-size: 50px;
+        line-height: 1.125;
+        font-weight: 900;
+        text-align: center;
+        text-shadow: 1px 3px 0 white;
+        margin-top: 0;
+        margin-bottom: 0.4em;
+        @include breakpoint(960) {
+            font-size: 40px;
+        }
+        @include breakpoint (479) {
+            font-size: 40px * 0.75;
+        }
+        @include breakpoint (359) {
+            font-size: 40px * 0.66;
+        }
+    }
+    .above-sign,
+    .after-sign {
+        display: block;
+        text-align: center;
+        font-size: 19px;
+        line-height: 1.42;
+        font-weight: 500;
+        @include breakpoint(960){
+            font-size: 22px;
+        }
+        @include breakpoint (479) {
+            font-size: 22px * 0.75;
+        }
+        @include breakpoint (359) {
+            font-size: 22px * 0.66;
+        }
+    }
+    .after-sign {
+        margin-bottom: 1.5em;
+    }
+    .swiper-wrapper {
+        display: flex;
+        text-align: center;
+        font-size: 0;
+        .swiper-slide {
+            font-size: 14px;
+            display: inline-block;
+            height: auto;
+            background-color: $white;
+            padding-bottom: 30px;
+            padding-top:20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            vertical-align: top;
+            outline: 1px solid #f4f4f4;
+            outline-offset: -2px;
+            @include breakpoint (479) {
+                padding: 7px;
+            }
+            &:hover {
+                p {
+                    a {
+                        color: $orange;
+                    }
+                }
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            .product-name-little {
+                font-size: 17px;
+                font-weight: 700;
+                line-height: 1.25;
+                a {
+                    color: #333;
+                }
+                @include breakpoint (960) {
+                    font-size: 18px;
+                }
+                @include breakpoint (479) {
+                    font-size: 12px;
+                }
+            }
+            .product-name-big {
+                font-size: 19px;
+                font-weight: 500;
+                line-height: 1.1;
+                margin-bottom: 0;
+                a {
+                    color: #333;
+                }
+                @include breakpoint(960) {
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                }
+                @include breakpoint (479) {
+                    font-size: 12px;
+                    margin-bottom: 0;
+                }
+            }
+            .product-price {
+                margin-top: 10px;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.25;
+                color: #333;
+                @include breakpoint (479) {
+                    font-size: 16.7px;
+                }
+                strong {
+                    color: #333;
+                    font-size: 25px;
+                    font-weight: 700;
+                    @include breakpoint (479) {
+                        font-size: 25px * 0.75;
+                    }
+                }
+            }
+            .grn {
+                font-size: 19px;
+                @include breakpoint (479) {
+                    font-size: 12.5px;
+                }
+            }
+        }
+    }
+    .arrows {
+        position: relative;
+        width: 150px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        @include breakpoint (479) {
+            width: 90px;
+        }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: relative;
+        top: 0;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        @include breakpoint (479) {
+           margin-bottom: 10px;
+        }
+    }
+    .swiper-button-next {
+        right: 0;
+    }
+    .swiper-button-prev {
+        left: 0;
+    }
+    .swiper-scrollbar {
+        position: relative !important;
+        top: 0;
+        bottom: auto;
+        margin-bottom: 5px;
+        left: 0;
+        width: 100%;
+    }
+}
+.product-slider-2 {
+    
+    @include breakpoint (960) {
+        padding-top: 68px;
+    }
+    @include breakpoint (479) {
+        padding-top: 45px;
+    }
+}

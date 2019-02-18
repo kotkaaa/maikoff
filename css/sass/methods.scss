@@ -1,0 +1,169 @@
+@import "common";
+
+/*TOP BANNER*/
+.top-banner {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    background-image: url(/images/tmp/banners/banner-3.jpg);
+    min-height: 370px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include breakpoint (960) {
+        background-position: center center;
+        min-height: 240px;
+    }
+    h1,
+    h2 {
+        color: #fff;
+        font-size: 50px;
+        line-height: 1.18;
+        font-weight: $bold;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 12px;
+        @include breakpoint (960) {
+            font-size: 36px;
+        }
+        @include breakpoint (479) {
+            font-size: 28px;
+        }
+        @include breakpoint (359) {
+            font-size: 24px;
+        }
+    }
+    p {
+        color: #fff;
+        font-size: 19px;
+        line-height: 1.7;
+        font-weight: $thin;
+        text-align: center;
+        margin: 0;
+        @include breakpoint (960) {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        @include breakpoint (479) {
+            font-weight: 400;
+        }
+        @include breakpoint (359) {
+            font-size: 14px;
+        }
+    }
+}
+.kind-print {
+    &.landing {
+        h2 {
+            margin-bottom: 25px !important;
+        }
+    }
+    .above-block {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        @include breakpoint (960) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        p {
+            color: $black;
+            font-size: 17px;
+            line-height: 1.58;
+            font-weight: $thin;
+            text-align: center;
+            margin: 0;
+            @include breakpoint (960) {
+                font-size: 20px;
+            }
+            @include breakpoint (479) {
+                font-size: 13.5px;
+            }
+        }
+        h2 {
+            font-size: 40px;
+            line-height: 1;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 0;
+            @include breakpoint (479) {
+                font-size: 26.5px;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        @include breakpoint (1420) {
+            padding: 0;
+        }
+        li {
+            list-style: none;
+            text-align: center;
+            margin-left: 36px;
+            margin-right: 36px;
+            width: 28%;
+            @include breakpoint (1420) {
+                width: 50%;
+                text-align: center;
+                margin: 0;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            @include breakpoint (960) {
+                width: 100%;
+            }
+            img {
+                margin-bottom: 40px;
+                max-width: 100%;
+                height: auto;
+                @include breakpoint (960) {
+                    margin-bottom: 25px;
+                }
+                @include breakpoint (479) {
+                    margin-bottom: 10px;
+                }
+            }
+            .kind-print-name {
+                margin: 0;
+                font-size: 26px;
+                font-weight: 500;
+                line-height: 1.53;
+                text-align: center;
+                color: #0b0b0b;
+                @include breakpoint (960) {
+                    font-size: 30px;
+                }
+                @include breakpoint (479) {
+                    font-size: 20px;
+                }
+                a { 
+                    color: $black;
+                }
+                 
+            }
+            p {
+                color: #484848;
+                font-size: 16px;
+                line-height: 1.5;
+                text-align: center;
+                font-weight: $thin;
+                margin: 0;
+                margin-bottom: 80px;
+                margin-top: 20px;
+                @include breakpoint (960) {
+                    font-size: 20px;
+                    
+                }
+                @include breakpoint (479) {
+                    font-size: 13.5px;
+                    margin-bottom: 40px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

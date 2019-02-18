@@ -1,0 +1,125 @@
+@import "core";
+@import "header";
+@import "footer";
+@import "slider";
+@import "basket";
+@import "main-menu";
+@import "product-grid";
+@import "ext/jquery-ui";
+@import "ext/nice-select";
+@import "ext/color-select";
+@import "ext/tooltipster";
+@import "ext/tooltipster-light";
+@import "ext/tooltipster-shadow";
+@import "ext/jquery.jscrollpane";
+@import "ext/perfect-scrollbar";
+@import "ext/swiper";
+@import "product-slider";
+@import "brand-slider";
+@import "modal";
+@import "breadcrumbs";
+@import "contact-us";
+@import "filters";
+@import "submenu";
+@import "static";
+
+.page-body {
+    padding-top: 105px;
+    @include transition(transform 0.2s ease-out);
+    @include breakpoint (1150) {
+        padding-top: 100px;
+    }
+    @include breakpoint (479) {
+        padding-top: 65px;
+    }
+    &:not(.scroll){
+        @include breakpoint_min_max(1151, 1300) {
+            padding-top: 75px;
+        }
+    }
+    &.scroll {
+        @include breakpoint_min(1151) {
+            padding-top: 55px;
+        }
+        @include breakpoint(1150) {
+            padding-top: 80px;
+        }
+        @include breakpoint(479) {
+            padding-top: (80px * 0.66);
+        }
+    }
+    &:after {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(216, 216, 216, 0.7);
+        z-index: 100;
+        @include opacity(0);
+        @include transition(opacity 0.3s ease-in);
+        pointer-events: all;
+        content: none;
+    }
+    &.turn-left {
+        @include breakpoint_min_max(481, 960){
+            @include transform(translateX(480px));
+        }
+        @include breakpoint_min(960){
+            @include transform(translateX(320px));
+        }
+        @include breakpoint(480){
+            @include transform(translateX(100%));
+        }
+        &:after {
+            @include opacity(1);
+            content: "";
+        }
+            }
+    &.search-in {
+        &:after {
+            z-index: 19;
+            @include opacity(1);
+            content: "";
+        }
+    }
+    &.noswipe {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+}
+
+/*# Jquery UI overrides #*/
+.ui-widget-shadow {
+    @include box-shadow(0px 0px 10px rgba(100, 100, 100, 0.5));
+}
+.ui-widget{
+    &.ui-widget-content {
+        &.ui-widget-shadow {
+            border: none;
+        }
+    }
+}
+body {
+    .ui-tooltip {
+        &:after {
+            display: block;
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            margin-left: -6px;
+            width: 12px;
+            height: 12px;
+            background-color: $white;
+            content: "";
+            @include transform(rotate(-45deg));
+        }
+    }
+}
+.ui-tooltip {
+    padding: 15px 18px;
+}

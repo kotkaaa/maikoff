@@ -1,0 +1,311 @@
+@import "common";
+
+.product-slider {
+    padding-bottom: 40px;
+}
+.contact {
+    margin-bottom: 55px;
+    @include breakpoint (479) {
+        margin-bottom: 40px;
+    }
+    .contact-sign {
+        margin-top: 60px;
+        margin-bottom: 40px;
+        text-align: center;
+        @include breakpoint (479) {
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 40px;
+            line-height: 1;
+            font-weight: 900;
+            color: $black;
+            margin-bottom: 30px;
+            @include breakpoint (479) {
+                font-size: 27px;
+                margin-bottom: 20px;
+            }
+        } 
+        p {
+            margin: 0;
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 1.4;
+            @include breakpoint (960) {
+                font-size: 20px;
+            }
+            @include breakpoint (479) {
+                font-size: 14px;
+            }
+        }
+    }
+    .contact-adress {
+        margin-bottom: 10px;
+        .home,
+        .clock,
+        .phone,
+        .contact-email {
+            &:before {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    width: 25px;
+                    height: 20px;
+                    background-size: contain;
+                    margin-left: -43px;
+                    @include opacity(0.8);
+            }
+        }
+        .home {
+            &:before {
+                height: 22px;
+                background-image: url(/images/smart/icons/svg/contact-home.svg);
+            }
+        }
+        .clock {
+            &:before {
+                background-image: url(/images/smart/icons/svg/contact-clock.svg);
+            }
+        }
+        .phone {
+            &:before {
+                height: 22px;
+                background-image: url(/images/smart/icons/svg/contact-phone.svg);
+                margin-top: 4px;
+            }
+        }
+        .contact-email {
+            &:before {
+                height: 18px;
+                margin-top:  3px;
+                background-image: url(/images/smart/icons/svg/contact-email.svg);
+            }
+        }
+        p {
+            font-weight: $thin;
+            font-size: 16px;
+            line-height: 1.5;
+            color: $black;
+            margin-top: 10px;
+            padding-left: 50px;
+            @include breakpoint (960) {
+                font-size: 20px;
+            }
+            @include breakpoint (479) {
+                padding-left: 0;
+                font-size: 14px;
+            }
+        }
+        .contact-phone {
+            margin: 0;
+            a {
+               font-size: 20px; 
+               line-height: 1.5;
+               color: $black;
+               &:hover {
+                   color: $orange;
+               }
+               @include breakpoint (960) {
+                   font-size: 22px;
+               }
+               @include breakpoint (479) {
+                   font-size: 15px !important;
+               }
+            }
+        }
+        .contact-email {
+            a {
+               font-size: 16px; 
+               line-height: 1.5;
+               color: $black;
+               @include breakpoint (960) {
+                   font-size: 20px;
+               }
+               @include breakpoint (479) {
+                   font-size: 14px;
+               }
+               &:hover {
+                   color: $orange;
+               }
+            }
+        }
+    }
+    .contact-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+/*        align-items: center;*/
+        @include breakpoint (1250) {
+            flex-direction: column;
+            justify-content: center;
+        }
+        form {
+            max-width: 860px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            @include breakpoint (960) {
+                flex-direction: column;
+                width: 100%;
+                margin-top: 55px;
+            }
+            @include breakpoint (479) {
+                margin-top: 0;
+            }
+            .feedback {
+                padding-right: 50px;
+                @include breakpoint (960) {
+                    padding: 0;
+                }
+            }
+            label {
+                font-size: 14px;
+                font-weight: $thin;
+                color: #484848;
+                line-height: 1.7;
+                @include breakpoint (960) {
+                    font-size: 18px;
+                }
+                @include breakpoint (479) {
+                    font-size: 12px;
+                }
+            }
+            .name,
+            .email,
+            .phone,
+             textarea {
+                border: 1px solid #d3d3d3;
+                border-radius: 2px;
+                @include breakpoint (960) {
+                    width: 100% !important;
+                    height: 65px;
+                    margin-top: 5px;
+                }
+                @include breakpoint (479) {
+                    height: 45px;
+                }
+            }
+            .name,
+            .phone,
+            .email {
+                margin-bottom: 30px;
+            }
+            .name,
+            .email {
+                width: 270px;
+            }
+            .phone {
+                width: 175px; 
+            }
+            textarea {
+                width: 540px;
+                height: 130px;
+                margin-bottom: 15px;
+                @include breakpoint (960) {
+                    height: 300px;
+                    margin-bottom: 40px;
+                }
+                @include breakpoint (479) {
+                    height: 200px;
+                    margin-bottom: 25px;
+                }
+            }
+            .submit {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                @include breakpoint (960) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                button {
+                    width: 220px;
+                    top: -2px;
+                    background-color: #fcfcfc;
+                    @include breakpoint (960) {
+                        width: 100% !important;
+                        font-size: 25px;
+                        height: 65px;
+                        margin-top: 22px;
+                    }
+                    @include breakpoint (479) {
+                        height: 45px;
+                        font-size: 17px;
+                        font-weight: 500;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+        .thanks {
+            width: 860px;
+            display: flex;
+            @include breakpoint (960) {
+                width: 100%;
+                max-width: 530px;
+                
+            }
+            .icon {
+                padding-right: 30px;
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    width: 83px;
+                    height: 100px;
+                    background-image: url(/images/smart/icons/thanks-for.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    @include breakpoint (479) {
+                        width: 35px;
+                        height: 42px;
+                        margin-top: 15px;
+                    }
+                }
+            }
+            .thanks-info {
+                h2 {
+                    font-size: 20px;
+                    line-height: 1.5;
+                    font-weight: $bold;
+                    color: #333;
+                    @include breakpoint (960) {
+                        font-size: 30px;
+                        margin-bottom: 10px;
+                    }
+                    @include breakpoint (479) {
+                        font-size: 20px;
+                    }
+                }
+                p {
+                    a {
+                        color: #505050;
+                        border-bottom: 1px dashed;
+                        font-size: 16px;
+                        @include breakpoint (960) {
+                            font-size: 20px;
+                        }
+                        @include breakpoint (479) {
+                            font-size: 14px;
+                        }
+                        &:hover {
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.google-map {
+    position: relative; 
+    width: 100%; 
+    height: 420px;
+    margin-bottom: 50px;
+    @include breakpoint(960) {
+        height: 240px;
+    }
+    @include breakpoint(479) {
+        height: 160px;
+    }
+}

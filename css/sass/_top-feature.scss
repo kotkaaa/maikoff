@@ -1,0 +1,143 @@
+.top-feature {
+    padding-top: 55px;
+    padding-left: 20px;
+    padding-bottom: 45px;
+    @include breakpoint (960) {
+        padding-left: 0;
+        padding-right: 20px;
+    }
+    @include breakpoint (479) {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+    .container {
+        overflow: auto;
+        @include breakpoint (960) {
+            overflow: scroll;
+            scroll-behavior: smooth;
+            overscroll-behavior: auto contain;
+        }
+        .top-feature-wrap { 
+            display: flex;
+            justify-content: space-between;
+            min-width: 1040px;
+            @include breakpoint (1060) {
+                padding-left: 0;
+                padding-bottom: 25px;
+            }
+            @include breakpoint (479) {
+                min-width: 650px;
+                padding-top: 13px;
+                padding-bottom: 17px;
+            }
+            .top-features-item {
+                position: relative;
+                @include breakpoint(1060){
+                    padding-left: 0 !important;
+                }
+                .top-feature-icon {
+                    left: 0;
+                    position: absolute;
+                    display: block;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    top: 50%;
+                    @include transform(translateY(-50%));
+                    @include breakpoint(1060) {
+                        position: relative;
+                        margin-bottom: 15px;
+                        top: 0;
+                        height: 49px !important;
+                        @include transform(none);
+                        background-position: bottom;
+                    }
+                    @include breakpoint(479) {
+                        height: 49px * 0.75 !important;
+                        margin-bottom: 10px;
+                    }
+                    @include breakpoint(359) {
+                        height: 49px * 0.66 !important;
+                        margin-bottom: 7px;
+                    }
+                }
+                &:nth-child(1) {
+                    padding-left: 77px;
+                    .top-feature-icon {
+                        width: 55px;
+                        height: 33px;
+                        background-image: url(/images/smart/icons/free-delivery.png);
+                        @include breakpoint(479) {
+                            width: 55px * 0.75;
+                        }
+                        @include breakpoint(479) {
+                            width: 55px * 0.66;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    padding-left: 62px;
+                    .top-feature-icon {
+                        width: 42px;
+                        height: 41px;
+                        background-image: url(/images/smart/icons/discount-system.png);
+                        @include breakpoint(479) {
+                            width: 42px * 0.75;
+                        }
+                        @include breakpoint(479) {
+                            width: 42px * 0.66;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    padding-left: 55px;
+                    .top-feature-icon {
+                        width: 44px;
+                        height: 45px;
+                        background-image: url(/images/smart/icons/express-delivery.png);
+                        @include breakpoint(479) {
+                            width: 44px * 0.75;
+                        }
+                        @include breakpoint(479) {
+                            width: 44px * 0.66;
+                        }
+                    }
+                }
+                &:nth-child(4) {
+                    padding-left: 56px;
+                    .top-feature-icon {
+                        width: 38px;
+                        height: 49px;
+                        background-image: url(/images/smart/icons/cert-print.png);
+                        @include breakpoint(479) {
+                            width: 38px * 0.75;
+                        }
+                        @include breakpoint(479) {
+                            width: 38px * 0.66;
+                        }
+                    }
+                }
+                span {
+                    text-transform: uppercase;
+                    color: $black;
+                    font-size: $font;
+                    font-weight: $bold;
+                    @include breakpoint (479) {
+                        font-size: 11px;
+                    }
+                }
+                p {
+                    color: #484848;
+                    font-size: 13px;
+                    font-weight: 300;
+                    line-height: 1.3;
+                    margin: 0;
+                    margin-top: 9px;
+                    @include breakpoint (479) {
+                        font-size: 10px;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}

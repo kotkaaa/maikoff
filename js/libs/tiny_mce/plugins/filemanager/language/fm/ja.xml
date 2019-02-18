@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language-pack>
+	<header>
+		<author>Moxiecode Systems AB</author>
+		<version minor="1" major="0" releasedate="2005-09-27" />
+		<description>
+			This is the japanese language pack for the MCFileManager.
+		</description>
+	</header>
+
+	<language code="ja_utf-8" title="Japanese" dir="ltr">
+		<group target="common">
+			<item name="exe">гѓ•г‚Ўг‚¤гѓ«</item>
+			<item name="image">г‚¤гѓЎгѓјг‚ёгѓ•г‚Ўг‚¤гѓ«</item>
+			<item name="archive">ZIPгѓ•г‚Ўг‚¤гѓ«</item>
+			<item name="html">HTMLгѓ•г‚Ўг‚¤гѓ«</item>
+			<item name="movie">ж з”»</item>
+			<item name="sound">йџіеЈ°гѓ•г‚Ўг‚¤гѓ«</item>
+			<item name="swf">Flashгѓ•г‚Ўг‚¤гѓ«</item>
+			<item name="powerpoint">PowerPoint</item>
+			<item name="document">гѓ‰г‚­гѓҐгѓЎгѓігѓ€гѓ•г‚Ўг‚¤гѓ«</item>
+			<item name="word">гѓЇгѓјгѓ‰гѓ•г‚Ўг‚¤гѓ«</item>
+			<item name="pdf">PDF</item>
+			<item name="excel">Excelгѓ•г‚Ўг‚¤гѓ«</item>
+			<item name="txt">гѓ†г‚­г‚№гѓ€гѓ•г‚Ўг‚¤гѓ«</item>
+			<item name="xml">XMLгѓ•г‚Ўг‚¤гѓ«</item>
+		</group>
+
+		<group target="frameset">
+			<item name="title">гѓ•г‚Ўг‚¤гѓ«гѓ»гѓ–гѓ©г‚¦г‚¶</item>
+		</group>
+
+		<group target="filelist">
+			<item name="title">гѓ•г‚Ўг‚¤гѓ«гѓ»гѓ–гѓ©г‚¦г‚¶</item>
+			<item name="filename">гѓ•г‚Ўг‚¤гѓ«еђЌ</item>
+			<item name="size">г‚µг‚¤г‚є</item>
+			<item name="modified">ж›ґж–°ж—Ґж™‚</item>
+			<item name="confirm_cut">йЃёжЉћгЃ—гЃџгѓ•г‚Ўг‚¤гѓ«г‚’е€‡г‚ЉеЏ–г‚Љпјџ</item>
+			<item name="confirm_copy">йЃёжЉћгЃ—гЃџгѓ•г‚Ўг‚¤гѓ«г‚’г‚ігѓ”гѓјпјџ</item>
+			<item name="confirm_paste">иІјг‚Љд»гЃ‘гЃ—гЃѕгЃ™гЃ‹пјџ</item>
+			<item name="confirm_delete">йЃёжЉћгЃ—гЃџгѓ•г‚Ўг‚¤гѓ«г‚’е‰Љй™¤пјџ</item>
+			<item name="confirm_unzip">жњ¬еЅ“гЃ«йЃёжЉћгЃ•г‚ЊгЃџгѓ•г‚Ўг‚¤гѓ«г‚’unzipгЃ™г‚‹?\nгѓ•г‚Ўг‚¤гѓ«гЃЊе¤§гЃЌгЃЄг‚‰гЃ°гЂЃж™‚й–“гЃЊгЃ‹гЃ‹г‚ЉгЃѕгЃ™гЂ‚</item>
+			<item name="zip_removed">ж¬ЎгЃ®гѓ•г‚Ўг‚¤гѓ«гЃЊzipеЅўејЏгЃ§гЃЇгЃЄгЃ„гЃ®гЃ§е¤–гЃ—гЃѕгЃ—гЃџгЂ‚</item>
+			<item name="createdir">гѓ•г‚©гѓ«гѓЂг‚’ж–°и¦ЏдЅњж€ђ</item>
+			<item name="createdoc">гѓ•г‚Ўг‚¤гѓ«г‚’ж–°и¦ЏдЅњж€ђ</item>
+			<item name="refresh">ж›ґж–°</item>
+			<item name="upload">гѓ•г‚Ўг‚¤гѓ«г‚’г‚ўгѓѓгѓ—гѓ­гѓјгѓ‰</item>
+			<item name="download">йЃёжЉћгЃ—гЃџгѓ•г‚Јгѓ«г‚’гѓЂг‚¦гѓігѓ­гѓјгѓ‰</item>
+			<item name="props">гѓ•г‚Ўг‚¤гѓ«гѓ»гѓ•г‚©гѓ«гѓЂгЃ®гѓ—гѓ­гѓ‘гѓ†г‚Ј</item>
+			<item name="cut">йЃёжЉћгЃ—гЃџг‚‚гЃ®г‚’е€‡г‚ЉеЏ–г‚Љ</item>
+			<item name="copy">йЃёжЉћгЃ—гЃџг‚‚гЃ®г‚’г‚ігѓ”гѓј</item>
+			<item name="paste">иІјг‚Љд»гЃ‘</item>
+			<item name="delete">йЃёжЉћгЃ—гЃџг‚‚гЃ®г‚’е‰Љй™¤</item>
+			<item name="unzip">йЃёжЉћгЃ•г‚ЊгЃџгѓ•г‚Ўг‚¤гѓ«г‚’unzipгЃ™г‚‹</item>
+			<item name="zip">йЃёжЉћгЃ•г‚ЊгЃџгѓ•г‚Ўг‚¤гѓ«г‚„гѓ•г‚©гѓ«гѓЂг‚’zipгЃ™г‚‹</item>
+			<item name="imagemanager">ж еѓЏз®Ўзђ†гЃ«иЎЊгЃЏ</item>
+			<item name="dir">гѓ•г‚©гѓ«гѓЂ</item>
+			<item name="parent_dir">дёЉгЃ®гѓ•г‚©гѓ«гѓЂ</item>
+			<item name="toggle_all">е…ЁйѓЁг‚’гѓ€г‚°гѓ«</item>
+			<item name="error_exists">г‚Ёгѓ©гѓј {path} гЃЊгЃ™гЃ§гЃ«е­ењЁгЃ™г‚‹</item>
+			<item name="error_delete_failed">г‚Ёгѓ©гѓјпјљг‚ўг‚Їг‚»г‚№жЁ©е€©гЃЊгЃЄгЃ„гЃ®гЃ§гЂЃе‰Љй™¤гЃ§гЃЌгЃЄгЃ„гЂ‚</item>
+			<item name="error_directory_not_empty">г‚Ёгѓ©гѓјпјљ {path} гЃЊз©єгЃ§гЃЇгЃЄгЃ„гЃ®гЃ§гЂЃе‰Љй™¤гЃ§гЃЌгЃЄгЃ„</item>
+		</group>
+
+		<group target="preview">
+			<item name="title">гѓ•г‚Ўг‚¤гѓ«гѓ»гѓ•г‚©гѓ«гѓЂгЃ®жѓ…е ±</item>
+			<item name="directory_information">гѓ•г‚©гѓ«гѓЂжѓ…е ±</item>
+			<item name="file_information">гѓ•г‚Ўг‚¤гѓ«жѓ…е ±</item>
+			<item name="creationdate">дЅњж€ђж—Ґж™‚:</item>
+			<item name="modificationdate">ж›ґж–°ж—Ґж™‚:</item>
+			<item name="access">г‚ўг‚Їг‚»г‚№:</item>
+			<item name="directory">гѓ•г‚©гѓ«гѓЂ:</item>
+			<item name="subdirectories">г‚µгѓѓгѓ–гѓ•г‚©гѓ«гѓЂ:</item>
+			<item name="files">гѓ•г‚Ўг‚¤гѓ«:</item>
+			<item name="total_file_size">еђ€иЁ€гѓ•г‚Ўг‚¤гѓ«г‚µг‚¤г‚є:</item>
+			<item name="filename">гѓ•г‚Ўг‚¤гѓ«еђЌ:</item>
+			<item name="file_size">гѓ•г‚Ўг‚¤гѓ«г‚µг‚¤г‚є:</item>
+			<item name="file_description">гѓ•г‚Ўг‚¤гѓ«иЄ¬жЋ:</item>
+			<item name="preview">дё‹и¦‹</item>
+			<item name="no_preview">дё‹и¦‹гЃЊгЃЄгЃ„</item>
+			<item name="button_select">йЃёжЉћ</item>
+			<item name="button_view">иЎЁз¤є</item>
+			<item name="readable">иЄ­иѕјгЃїеЏЇ</item>
+			<item name="not_readable">иЄ­иѕјгЃїдёЌеЏЇ</item>
+			<item name="writable">ж›ёиѕјгЃїеЏЇ</item>
+			<item name="not_writable">ж›ёиѕјгЃїдёЌеЏЇ</item>
+		</group>
+
+		<group target="fileprops">
+			<item name="title">гѓ•г‚Ўг‚¤гѓ«гѓ»гѓ•г‚©гѓ«гѓЂгЃ®гѓ—гѓ­гѓ‘гѓ†г‚Ј</item>
+			<item name="description">гѓ•г‚Ўг‚¤гѓ«гѓ»гѓ•г‚©гѓ«гѓЂгЃ®гѓ—гѓ­гѓ‘гѓ†г‚Ј</item>
+			<item name="properties_on">гѓ—гѓ­гѓ‘гѓ†г‚Јжњ‰еЉ№:</item>
+			<item name="name">еђЌе‰Ќ:</item>
+			<item name="button_save">дїќе­</item>
+			<item name="button_cancel">г‚­гѓЈгѓіг‚»гѓ«</item>
+			<item name="error_exists">г‚Ёгѓ©гѓјпјљгЃќгЃ®гѓ•г‚Ўг‚¤гѓ«г‚„гѓ•г‚©гѓ«гѓЂгЃЊгЃ™гЃ§гЃ«е­ењЁгЃ™г‚‹</item>
+		</group>
+
+		<group target="createdir">
+			<item name="title">гѓ•г‚©гѓ«гѓЂж–°и¦ЏдЅњж€ђ</item>
+			<item name="description">гѓ•г‚©гѓ«гѓЂеђЌ</item>
+			<item name="template">гѓ†гѓігѓ—гѓ¬гѓјгѓ€:</item>
+			<item name="select_template">-- гѓ†гѓігѓ—гѓ¬гѓјгѓ€г‚’йЃёжЉћ --</item>
+			<item name="directory_name">гѓ•г‚©гѓ«гѓЂеђЌ:</item>
+			<item name="create_in">дЅњж€ђе…€:</item>
+			<item name="button_create">дЅњж€ђ</item>
+			<item name="button_cancel">г‚­гѓЈгѓіг‚»гѓ«</item>
+			<item name="error_missing_name">г‚Ёгѓ©гѓјпјљеђЌе‰Ќг‚’иЁ­е®љгЃ—гЃ¦гЃ„гЃЄгЃ„</item>
+			<item name="error_invalid_template_selection">г‚Ёгѓ©гѓјпјљгѓ†гѓігѓ—гѓ¬гѓјгѓ€г‚’иЁ­е®љгЃ—гЃ¦гЃ„гЃЄгЃ„</item>
+			<item name="error_template_not_found">г‚Ёгѓ©гѓјпјљгѓ†гѓігѓ—гѓ¬гѓјгѓ€гЃЊи¦‹гЃ¤гЃ‹г‚‰гЃЄгЃ„</item>
+			<item name="error_invalid_name">г‚Ёгѓ©гѓјпјљгѓ•г‚©гѓ«гѓЂеђЌгЃЊз„ЎеЉ№</item>
+			<item name="error_exists">г‚Ёгѓ©гѓјпјљгЃќгЃ®гѓ•г‚©гѓ«гѓЂгЃЊгЃ™гЃ§гЃ«е­ењЁгЃ™г‚‹</item>
+		</group>
+
+		<group target="createdoc">
+			<item name="title">гѓ•г‚Ўг‚¤гѓ«ж–°и¦ЏдЅњж€ђ</item>
+			<item name="description">гѓ†гѓігѓ—гѓ¬гѓјгѓ€гЃ‹г‚‰дЅњж€ђ</item>
+			<item name="template">гѓ†гѓігѓ—гѓ¬гѓјгѓ€:</item>
+			<item name="select_template">-- гѓ†гѓігѓ—гѓ¬гѓјгѓ€г‚’йЃёжЉћ --</item>
+			<item name="required_filename">гѓ•г‚Ўг‚¤гѓ«еђЌг‚’иЁе…ҐгЃ™г‚‹еї…и¦ЃгЃЊгЃ‚г‚‹</item>
+			<item name="filename">гѓ•г‚Ўг‚¤гѓ«еђЌ:</item>
+			<item name="create_in">дЅњж€ђе…€:</item>
+			<item name="button_create">дЅњж€ђ</item>
+			<item name="button_cancel">г‚­гѓЈгѓіг‚»гѓ«</item>
+			<item name="error_missing_document_name">г‚Ёгѓ©гѓјпјљгѓ•г‚Ўг‚¤гѓ«еђЌгЃЊеї…и¦Ѓ</item>
+			<item name="error_missing_template_selection">Error: You must select a template.</item>
+			<item name="error_missing_template">Error: The selected template could not be found.</item>
+			<item name="error_invalid_file_name">г‚Ёгѓ©гѓјпјљгѓ•г‚Ўг‚¤гѓ«еђЌгЃЊз„ЎеЉ№</item>
+			<item name="error_exists">г‚Ёгѓ©гѓјпјљгЃќгЃ®гѓ•г‚Ўг‚¤гѓ«гЃЊгЃ™гЃ§гЃ«е­ењЁгЃ™г‚‹</item>
+		</group>
+
+		<group target="upload">
+			<item name="title">г‚ўгѓѓгѓ—гѓ­гѓјгѓ‰</item>
+			<item name="description">гѓ•г‚Ўг‚¤гѓ«г‚’г‚ўгѓѓгѓ—гѓ­гѓјгѓ‰гЃ®гѓ•г‚©гѓ«гѓ </item>
+			<item name="upload_in">г‚ўгѓѓгѓ—гѓ­гѓјгѓ‰е…€:</item>
+			<item name="valid_extensions">жњ‰еЉ№ж‹ЎејµеЅўејЏ:</item>
+			<item name="max_upload_size">жњЂе¤§г‚µг‚¤г‚є:</item>
+			<item name="file_to_upload">г‚ўгѓѓгѓ—гѓ­гѓјгѓ‰гЃ™г‚‹гѓ•г‚Ўг‚¤гѓ«:</item>
+			<item name="as_file_name">гѓ•г‚Ўг‚¤гѓ«еђЌгЃЁгЃ—гЃ¦:</item>
+			<item name="required_filename">гѓ•г‚Ўг‚¤гѓ«еђЌг‚’иЁе…ҐгЃ™г‚‹еї…и¦ЃгЃЊгЃ‚г‚‹</item>
+			<item name="button_upload">г‚ўгѓѓгѓ—гѓ­гѓјгѓ‰</item>
+			<item name="button_add_upload">г‚ўгѓѓгѓ—гѓ­гѓјгѓ‰иїЅеЉ </item>
+			<item name="button_cancel">г‚­гѓЈгѓіг‚»гѓ«</item>
+			<item name="error_exists">г‚Ёгѓ©гѓјпјљгЃќгЃ®гѓ•г‚Ўг‚¤гѓ«гЃЊгЃ™гЃ§гЃ«е­ењЁгЃ™г‚‹</item>
+			<item name="error_to_large">г‚Ёгѓ©гѓјпјљгЃќгЃ®гѓ•г‚Ўг‚¤гѓ«гЃЊе¤§гЃЌгЃ™гЃЋг‚‹</item>
+			<item name="remove">еЏ–г‚Љй™¤гЃЏ</item>
+		</group>
+
+		<group target="unzip">
+			<item name="title">UnzipгЃ®ж¦‚и¦Ѓ</item>
+			<item name="description">йЃёжЉћгЃ—гЃџzipеЅўејЏгЃ®гѓ•г‚Ўг‚¤гѓ«гЃ®ж¦‚и¦Ѓ</item>
+			<item name="zipfile_name">zipгѓ•г‚Ўг‚¤гѓ«еђЌ:</item>
+			<item name="current_folder">зЏѕењЁгЃ®гѓ•г‚©гѓ«гѓЂ:</item>
+			<item name="overwrite_files">гѓ•г‚Ўг‚¤гѓ«г‚’дёЉж›ёгЃЌ:</item>
+			<item name="name">еђЌе‰Ќ</item>
+			<item name="size">г‚µг‚¤г‚є</item>
+			<item name="csize">Cгѓјг‚µг‚¤г‚є</item>
+			<item name="exists">е­ењЁгЃ™г‚‹</item>
+			<item name="status">г‚№гѓ†гѓјг‚їг‚№</item>
+			<item name="created">дЅњж€ђгЃ—гЃџ</item>
+			<item name="button_unzip">Unzip</item>
+			<item name="button_cancel">г‚­гѓЈгѓіг‚»гѓ«</item>
+			<item name="button_back">ж€»г‚‹</item>
+			<item name="button_close">й–‰гЃг‚‹</item>
+			<item name="Accepted">еЏ—гЃ‘гЃџ</item>
+			<item name="Denied">еђ¦е®љгЃ—гЃџ</item>
+			<item name="Passed">ж€ђеЉџгЃ—гЃџ</item>
+			<item name="Failed">е¤±ж•—гЃ—гЃџ</item>
+			<item name="Yes">гЃЇгЃ„</item>
+			<item name="No">гЃ„гЃ„гЃ€</item>
+		</group>
+
+		<group target="zip">
+			<item name="title">zipг‚’дЅњж€ђ</item>
+			<item name="description">дЅњж€ђгЃ—гЃџгЃ„zipгѓ•г‚Ўг‚¤гѓ«гЃ®еђЌе‰Ќг‚’иЁе…Ґпјљ</item>
+			<item name="created_in">zipгѓ•г‚Ўг‚¤гѓ«гЃ®дїќе­е…€:</item>
+			<item name="name">еђЌе‰Ќ:</item>
+			<item name="required_filename">гѓ•г‚Ўг‚¤гѓ«еђЌг‚’е…ҐеЉ›гЃ™г‚‹еї…и¦ЃгЃЊгЃ‚г‚‹.</item>
+			<item name="button_create">дЅњж€ђ</item>
+			<item name="button_cancel">г‚­гѓЈгѓіг‚»гѓ«</item>
+		</group>
+	</language>
+</language-pack>

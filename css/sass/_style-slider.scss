@@ -1,0 +1,145 @@
+.style-slider {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $family;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    @include breakpoint(960){
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    @include breakpoint(479){
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    span {
+        display: block;
+        text-align: center;
+        font-size: 19px;
+        line-height: 1.5;
+        font-weight: 500;
+        text-align: center;
+        @include breakpoint(960){
+            font-size: 22px;
+            font-weight: 300;
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+        @include breakpoint(479){
+            padding-left: 30px;
+            padding-right: 30px;
+            font-weight: 500;
+            font-size: 14.7px;
+        }
+    }
+    h2 {
+        margin-top: 10px;
+        font-size: 32px;
+        line-height: 1.25;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0.7px;
+        @include breakpoint(960){
+            font-size: 34px;
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+        @include breakpoint(479){
+            font-size: 22.7px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    .print-swiper-element {
+        position: relative;
+    }
+    .swiper-container {
+        margin-left: 45px;
+        margin-right: 45px;
+        @include breakpoint(960) {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        @include breakpoint(479) {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+    .swiper-wrapper {
+        .swiper-slide {
+            .product-item {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                height: auto;
+                color: #333;
+                max-width: 172px;
+                @include breakpoint(479){
+                    max-width: 118px;
+                }
+                .image {
+                    height: 172px;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    border: 1px solid #e1e1e1;
+                    @include breakpoint(479){
+                        height: 118px;
+                    }
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                p {
+                    font-family: $family;
+                    font-size: 19px;
+                    line-height: 1.3;
+                    font-weight: 500;
+                    a {
+                        color: #333;
+                    }
+                    @include breakpoint(479){
+                        font-size: 15px;
+                    }
+                }
+                &:hover {
+                    p {
+                        a {
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .arrows {
+        position: relative;
+        width: 150px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        @include breakpoint (479) {
+            width: 90px;
+        }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: relative;
+        top: 0;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        @include breakpoint (479) {
+            margin-bottom: 20px;
+        }
+        &.swiper-button-disabled {
+            @include opacity (0);
+            height: 0;
+            margin-bottom: 0;
+        }
+    }
+    .swiper-button-next {
+        right: 0;
+    }
+    .swiper-button-prev {
+        left: 0;
+    }
+}

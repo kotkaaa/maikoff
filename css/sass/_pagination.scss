@@ -1,0 +1,95 @@
+.pagination {
+    padding-bottom: 80px;
+    @include breakpoint (960) {
+        padding-bottom: 30px;
+    }
+    button {
+        display: block;
+        margin: 0 auto;
+        width: 320px;
+        line-height: 2.3 !important;
+        border: none !important;
+        margin-bottom: 35px;
+        background-color: $footer-background;
+        @include breakpoint(479) {
+            width: 320px * 0.75;
+            height: 40px !important;
+            font-size: 16px !important;
+        }
+        &:hover {
+            color: $orange;
+        }
+        &:active {
+            color: $orange;
+            background-color: #fff1ec;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        li {
+            text-align: center;
+            list-style: none;
+            border-radius: 3px;
+            background-color: $footer-background;
+            margin-left: 5px;
+            margin-right: 5px;
+            border: none;
+            a {
+                display: inline-block;
+                outline: none;
+                font-weight: 500;
+                padding-left: 30px;
+                padding-right: 30px;
+                font-size: 25px;
+                line-height: 65px;
+                color: $black;
+                @include breakpoint(960) {
+                    padding-left: 30px * 0.75;
+                    padding-right: 30px * 0.75;
+                    line-height: 64px * 0.75;
+                    font-size: 25px * 0.75;
+                }
+                @include breakpoint(479) {
+                    padding-left: 30px * 0.6;
+                    padding-right: 30px * 0.6;
+                    line-height: 64px * 0.6;
+                    font-size: 25px * 0.6;
+                }
+                @include breakpoint(420) {
+                    padding-left: 30px * 0.55;
+                    padding-right: 30px * 0.55;
+                    line-height: 64px * 0.55;
+                    font-size: 25px * 0.55;
+                }
+                @include breakpoint(379) {
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    line-height: 32px;
+                    font-size: 13px;
+                }
+            }
+            &.selected {
+                background-color: #fff !important;
+                @include box-shadow(0 0px 4px -1px #000);
+                &:hover {
+                    a {
+                        color: $black !important;
+                    }
+                }
+                a {
+                    pointer-events: none;
+                    cursor: default;
+                    transform: none;
+                }
+            }
+            &:hover {
+                background-color: #fff1ec;
+                a {
+                    color: $orange;
+                }
+            }
+        }
+    }
+}

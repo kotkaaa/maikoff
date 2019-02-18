@@ -1,0 +1,111 @@
+@import "category";
+@import "style-slider";
+@import "seo-text";
+.content-box {
+    padding-top: 35px;
+    .right-box {
+        margin-left: 275px;
+        padding-left: 50px;
+        @include breakpoint(960) {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .left-box {
+        float: left;
+        display: inline-block;
+        vertical-align: top;
+        width: 275px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+        @include breakpoint(960) {
+            display: none;
+        }
+    }
+    .monkey-sign {
+        font-size: 42px;
+        font-weight: $bold;
+        line-height: 1;
+        color: #333;
+        margin: 0;
+        margin-bottom: 15px;
+        @include breakpoint (960) {
+            padding-left: 15px;
+            font-size: 38px;
+        }
+        @include breakpoint (479) {
+            font-size: 26px;
+            margin: 0;
+        }
+    }
+    .monkey-content-top {
+        background-image: url('/images/tmp/banners/banner-5.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 210px;
+        margin-bottom: 35px;
+        @include breakpoint (960) {
+            background-image: none;
+            min-height: 0px !important;
+            margin: 0;
+        }
+        .content-top-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;;
+            max-width: 1200px;
+            margin: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            @include breakpoint (479) {
+                padding-top: 0;
+            }
+            .icon-monkey {
+                margin-top: 18px;
+                img {
+                    width: 180px;
+                    height: 180px;
+                    @include breakpoint (479) {
+                        width: 120px;
+                        height: 120px;
+                        
+                    }
+                }
+                @include breakpoint (960) {
+                    padding-left: 15px;
+                }
+            }
+            .monkey-info {
+                max-width: 845px;
+                text-align: right;
+                padding-left: 15px;
+                padding-right: 15px;
+                @include breakpoint (960) {
+                    display: none;
+                }
+                p {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #cacaca;
+                    line-height: 1.55;
+                    text-align: left;
+                    margin-bottom: 10px;
+                    @include breakpoint (960) {
+                        font-size: 16px;
+                    }
+                }
+                button {
+                    background-color: transparent;
+                    color: #ccb7a7;
+                    border-color: #ccb7a7;
+                }
+            }
+        }
+    }
+}
+.style-slider {
+    padding-top: 0;
+}

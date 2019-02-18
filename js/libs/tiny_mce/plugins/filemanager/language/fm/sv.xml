@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<language-pack>
+	<header>
+		<!-- Please fill in contact information (author & email), we might contact you when we are doing updates -->
+		<!-- You will also have the chance to participate in beta releases of new versions -->
+		<author>Moxiecode Systems AB</author>
+		<version minor="3" major="0" releasedate="2007-05-07" />
+		<description>
+			This is the Swedish language pack for the MCImageManager.
+		</description>
+	</header>
+
+	<language code="sv" title="Swedish" dir="ltr">
+		<group target="error">
+			<item name="tofile_exists">Filen existerar redan.</item>
+			<item name="no_from_file">Kдllfilen existerar inte.</item>
+			<item name="demo">Denna operation дr inte tillеten i demostrations lдget.</item>
+			<item name="invalid_filename">Filens namn дr inte tillеten.</item>
+			<item name="no_read_access">Inga lдsrдttigheter till denna fil/katalog.</item>
+			<item name="no_write_access">Inga skrivrдttigheter till denna fil/katalog.</item>
+			<item name="copy_failed">Kopieringen misslyckades.</item>
+			<item name="move_failed">Fцrflyttningen/omdцpningen misslyckades.</item>
+			<item name="template_missing">Mallen kunde inte hittas.</item>
+			<item name="createdoc_failed">Dokumentet kunde inte skapas.</item>
+			<item name="no_access">Du har inga rдttiheter att utfцra denna operation.</item>
+			<item name="file_exists">Mеlfilen existerar redan.</item>
+			<item name="upload_failed">Uppladdningen misslyckades.</item>
+			<item name="error_to_large">Filen du fцrsцkte ladda upp дr fцr stor.</item>
+			<item name="file_not_exists">Filen existerar inte.</item>
+			<item name="delete_failed">Rederingen misslyckades.</item>
+			<item name="folder_exists">Katalogen finns redan.</item>
+			<item name="no_filesystem">Filsytem kunde inte hittas: {path}.</item>
+			<item name="createdir_failed">Kunde inte skapa katalog.</item>
+			<item name="createzip_failed">Kunde inte skapa zip fil.</item>
+			<item name="rename_failed">Kunde inte dцpa om filen.</item>
+			<item name="savecontent_failed">Kunde inte spara filen.</item>
+		</group>
+
+		<group target="message">
+			<item name="zip_success">Zip filen har skapats.</item>
+			<item name="copy_success">Kopieringen дr utfцrd.</item>
+			<item name="move_success">Fцrflyttningen дr utfцrd</item>
+			<item name="createdoc_success">Dokumentet har skapats.</item>
+			<item name="delete_success">Filen/katalogen har raderats.</item>
+			<item name="directory_ok">Katalogen har skapats.</item>
+			<item name="keepalive">Keepalive</item>
+			<item name="upload_ok">Uppladdningen дr utfцrd.</item>
+			<item name="confirm_cut">Дr du sдker pе att du vill klippaut de markerade filerna/katalogerna?</item>
+			<item name="confirm_copy">Дr du sдker pе att du vill kopiera de markerade filerna/katalogerna?</item>
+			<item name="confirm_paste">Дr du sдker pе att du vill klista in filerna hдr?</item>
+			<item name="confirm_delete">Дr du sдker pе att du vill radera de markerade filerna/katalogerna?</item>
+			<item name="insert">Sammanstдller information, var god vдnta...</item>
+			<item name="paste_in_progress">Klista in pеgеr, var god vдnta...</item>
+		</group>
+
+		<group target="common">
+			<item name="createdir">Skapa katalog</item>
+			<item name="createfile">Nytt dokument</item>
+			<item name="help">Hjдlp</item>
+			<item name="refresh">Uppdatera</item>
+			<item name="upload">Ladda upp</item>
+			<item name="directory">Katalog</item>
+			<item name="imagemanager">Image manager</item>
+			<item name="title">Moxiecode File Mananger</item>
+			<item name="alert_ok">Ok</item>
+			<item name="confirm_yes">Ja</item>
+			<item name="confirm_no">Nej</item>
+		</group>
+
+		<group target="button">
+			<item name="create">Skapa</item>
+			<item name="cancel">Avbryt</item>
+			<item name="save">Spara</item>
+		</group>
+
+		<group target="panel">
+			<item name="categories">Kategorier</item>
+			<item name="preview">Fцrhandsgranska</item>
+
+			<!-- Legacy items -->
+			<item name="favorites">Favoriter</item>
+			<item name="history">Historik</item>
+		</group>
+
+		<group target="edit">
+			<item name="title">Edit file</item>
+			<item name="description">Edit the contents of the file.</item>
+			<item name="loading_wait">Loading contents please wait.</item>
+			<item name="saving_wait">Saving contents please wait.</item>
+			<item name="file_path">File path:</item>
+		</group>
+
+		<group target="actions">
+			<item name="insert">Vдlj</item>
+			<item name="download">Laddahem</item>
+			<item name="rename">Dцpom</item>
+			<item name="cut">Klipp ut</item>
+			<item name="copy">Kopiera</item>
+			<item name="paste">Klista in</item>
+			<item name="deleteit">Radera</item>
+			<item name="edit">Redigera</item>
+			<item name="zip">Zippa</item>
+			<item name="view">Visa</item>
+			<item name="select_all">Markera alla</item>
+			<item name="unselect_all">Avmarkera alla</item>
+
+			<!-- Legacy items -->
+			<item name="addfavorites">Lдggtill favoriter</item>
+			<item name="removefavorites">Radera favoriter</item>
+		</group>
+
+		<group target="filelist">
+			<item name="filename">Filnamn</item>
+			<item name="size">Storlek</item>
+			<item name="type">Filtyp</item>
+			<item name="modified">Дndrad</item>
+			<item name="with_selected">Med markeringen:</item>
+			<item name="info_dirs">Kataloger:</item>
+			<item name="info_files">Filer:</item>
+			<item name="info_size">Total filstorlek:</item>
+			<item name="info_access">Rдttigheter:</item>
+			<item name="loading">Laddar...</item>
+		</group>
+
+		<group target="createdir">
+			<item name="title">Skapa katalog</item>
+			<item name="description">Fyll i namnet pе katalogen du vill skapa.</item>
+			<item name="template">Mall:</item>
+			<item name="select_template">-- Vдlj mall --</item>
+			<item name="directory_name">Katalogens namn:</item>
+			<item name="create_in">Skapa i:</item>
+			<item name="progress">Skapar katalog, var god vдnta...</item>
+		</group>
+
+		<group target="createdoc">
+			<item name="title">Skapa katalog</item>
+			<item name="description">Fyll i formulдret nedan fцr att skapa ett dokument utifrеn en mall.</item>
+			<item name="template">Mall:</item>
+			<item name="select_template">-- Vдlj mall --</item>
+			<item name="name">Namn</item>
+			<item name="path">Sцkvдg</item>
+			<item name="preview">Fцrhandsgranska</item>
+			<item name="preview_title">Fцrhandsgranskning av: {file}</item>
+		</group>
+
+		<group target="upload">
+			<item name="title">Ladda upp</item>
+			<item name="description">Vдlj filer att ladda upp nedan.</item>
+			<item name="valid_extensions">Godkдnnda filдndelser:</item>
+			<item name="max_upload_size">Max storlek:</item>
+			<item name="file_to_upload">Fill att ladda upp:</item>
+			<item name="as_file_name">Filnamn:</item>
+			<item name="path">Sцkvдg: </item>
+			<item name="button_upload">Ladda upp</item>
+			<item name="browse">Lдgg till fil(er)</item>
+			<item name="progress">Laddar upp fil, var god vдnta...</item>
+			<item name="upload_warn">Filer hеller pе att laddas upp, дr du sдker pе att du vill avbryta?</item>
+			<item name="statusrow">Du har {files} filer (totalt {size}) som vдntar pе att fе bli uppladdade.</item>
+			<item name="progressinfo">{loaded} av {total} uppladdade med hastigheten {speed}/s.</item>
+			<item name="abort">Avbryt uppladdning</item>
+			<item name="add_more">Lдgg till fler?</item>
+			<item name="upload_to_server">Ladda upp till servern</item>
+			<item name="cancelled">Upladdningen avbruten</item>
+			<item name="choose_files">Vдlj filer</item>
+			<item name="basic_upload">Om du har problem att ladda upp kan du alltid anvдnda den {a}enkla upladdaren{/a}.</item>
+			<item name="remove">Radera</item>
+			<item name="file">Fil</item>
+			<item name="size">Storlek</item>
+			<item name="status">Status</item>
+			<item name="no_valid_files">Du mеste vдlja nеgra korrekta filer.</item>
+		</group>
+
+		<group target="createzip">
+			<item name="title">Skapa zip arkiv</item>
+			<item name="description">Fyll i namnet pе zip filen du vill skapa.</item>
+			<item name="name">Namn:</item>
+			<item name="path">Sцkvдg</item>
+		</group>
+
+		<group target="tinymce">
+			<item name="insertfile_desc">Infoga fil</item>	
+		</group>
+
+		<group target="favorites">
+			<item name="special_folder_title">Favoriter</item>
+			<item name="addfavorites">Lдgg till favorit(er)</item>
+			<item name="removefavorites">Radera favorit</item>
+			<item name="confirm_remove_favorite">Дr du sцker pе att du vill radera favoriten?</item>
+			<item name="remove_favorite_failed">Raderingen av favoriten misslyckades..</item>
+		</group>
+
+		<group target="history">
+			<item name="special_folder_title">Historik</item>
+		</group>
+	</language>
+</language-pack>

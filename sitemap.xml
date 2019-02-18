@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap>
+        <loc>http://maikoffnew.loc/sitemap_categories.xml</loc>
+        <lastmod>2018-11-23T12:43:34+03:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>http://maikoffnew.loc/sitemap_catalog.xml</loc>
+        <lastmod>2018-11-23T12:43:34+03:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>http://maikoffnew.loc/sitemap_prints.xml</loc>
+        <lastmod>2018-11-23T12:43:34+03:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>http://maikoffnew.loc/sitemap_filters_catalog.xml</loc>
+        <lastmod>2018-11-23T12:43:34+03:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>http://maikoffnew.loc/sitemap_filters_prints.xml</loc>
+        <lastmod>2018-11-23T12:43:34+03:00</lastmod>
+    </sitemap>
+</sitemapindex>

@@ -1,0 +1,9 @@
+Options All -Indexes
+RewriteEngine On
+ErrorDocument 404 /interactive/spool_prints.php?spoolled
+
+Deny from all
+<FilesMatch "^.*(\.jpg)?$">
+  Order Deny,Allow
+  Allow from all
+</FilesMatch>

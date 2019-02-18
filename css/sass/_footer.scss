@@ -1,0 +1,262 @@
+footer {
+    background-color: $footer-background;
+    .section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding-top: 49px;
+        margin-bottom: 25px;
+        .footer-logo {
+            width: 121px;
+            height: 35px;
+            background-image: url(/images/smart/logo-foot-2.png);
+            background-repeat: no-repeat;
+            margin-bottom: 1.25em;
+            @include breakpoint (960) {
+                background-image: url(/images/smart/icons/logo-foot.png);
+                width: 153px;
+                height: 46px;
+                background-size: contain;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @include breakpoint (479) {
+                width: 103px;
+                height: 32px;
+            }
+        }
+        .footer-social {
+            max-width: 125px;
+            margin-bottom: 0.5em;
+            @include breakpoint(960) {
+                display: flex;
+                max-width: 250px;
+            }
+            a {
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    width: 33px;
+                    height: 32px; 
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    @include breakpoint(960) {
+                        width: 49px;
+                        height: 49px;
+                    }
+                    @include breakpoint (479) {
+                        width: 33px;
+                        height: 33px;
+                    }
+                }
+                &:first-child {
+                    &:before {
+                        background-image: url('/images/smart/icons/mail.png');
+                        @include breakpoint (960) {
+                            background-image: url(/images/smart/icons/mobmail.png);
+                        }
+                    }
+                    &:hover {
+                        &:before {
+                            background-image: url('/images/smart/icons/hover-mail.png');
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    &:before {
+                        background-image: url('/images/smart/icons/facebook.png');
+                        @include breakpoint (960) {
+                            background-image: url(/images/smart/icons/mob-facebook.png);
+                        }
+                    }
+                    &:hover {
+                        &:before {
+                            background-image: url('/images/smart/icons/hover-facebook.png');
+                        }
+                    }
+                }
+                &:last-child {
+                    &:before {
+                        background-image: url('/images/smart/icons/twitter.png');
+                        @include breakpoint (960) {
+                            background-image: url(/images/smart/icons/mob-twitter.png);
+                        }
+                    }
+                    &:hover {
+                        &:before {
+                            background-image: url('/images/smart/icons/hover-twitter.png');
+                        }
+                    }
+                }
+                @include breakpoint (960) {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+                @include breakpoint (479) {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+            }
+        }
+        .footer-col.menu {
+            margin-top: -10px;
+        }
+        .footer-col {
+            &:first-child {
+                margin-top: -8px;
+            }
+            .flex {
+                display: flex;
+            }
+            .heading-col {
+                text-transform: uppercase;
+                color: $dark-grey;
+                font-weight: $bold;
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+            .list-links {
+                width: 270px;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                @include breakpoint(1410) {
+                    width: auto;
+                }
+                + .list-links {
+                    padding-left: 20px;
+                    @include breakpoint(1280) {
+                        width: auto;
+                    }
+                }
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    list-style: none;
+                    line-height: 1.86;
+                    font-size: 15px;
+                    color: $grey;
+                    font-weight: $thin;
+                    @include breakpoint (960) {
+                        font-size: 25px;
+                        display: block;
+                    }
+                    @include breakpoint (479) {
+                        font-size: 16.6px;
+                    }
+                    a {
+                        color: $grey;
+                        font-weight: 300;
+                        &:hover {
+                            color: $orange;
+                        }
+                    }
+                }
+                .in-two-line {
+                    line-height: 1.25em;
+                }
+            }
+            @include breakpoint (960) {
+                margin: auto;
+                text-align: center;
+            }
+        }
+        .footer-col.menu {
+            @include breakpoint (960) {
+                display: none;
+            }
+        }
+    }
+    .hr {
+        max-width: 1460px;
+        height: 1px;
+        background-color: #d1d1d1;
+        margin-bottom: 12px;
+        @include breakpoint (960) {
+            margin-bottom: 25px;
+        }
+    }
+    .bottom-sign {
+        display: flex;
+        justify-content: space-between;
+        @include breakpoint (960) {
+            display: block;
+            text-align: center;
+        }
+        @include breakpoint (479) {
+            line-height: 12px;
+        }
+        p {
+            font-size: 15px;
+            color: $grey;
+            font-weight: $thin;
+            margin-bottom: 7px;
+            @include breakpoint (960) {
+                margin: 0;
+                font-size: 22px;
+            }
+            @include breakpoint (479) {
+                font-size: 14px;
+                
+            }
+        }
+        .web-life {
+            a {
+                color: $grey;
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+        .text {
+            @include breakpoint (960) {
+                display: none;
+            }
+        }
+    }
+    .bottom-section {
+        padding-bottom: 24px;
+        .bottom-text {
+            position: relative;
+            @include breakpoint (960) {
+                font-size: 21px;
+                text-align: center;
+                font-weight: 300;
+                position: relative;
+                top: 15px;
+                display: none;
+            }
+            @include breakpoint (479) {
+                font-size: 13.6px;
+            }
+            p {
+                max-width: 1165px;
+                display: inline-block;
+                vertical-align: top;
+                color: $grey;
+                line-height: 1.46;
+                margin: 3px;
+                font-size: 15px;
+                font-weight: $thin;
+                @include breakpoint (479) {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+#scrollup {
+    position: fixed;
+    opacity: 0.8;
+    padding: 15px 10px 10px;
+    right: 5%;
+    bottom: 40%;
+    display: none;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: .3s all;
+    z-index: 10000;
+    @include breakpoint(960){
+        display: none !important;
+    }
+}

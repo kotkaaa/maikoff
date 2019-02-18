@@ -1,0 +1,251 @@
+.brand-slider {
+    display: block;
+    background-image: url("/images/smart/brand-back.jpg");
+    height: auto;
+    padding-bottom: 70px;
+    padding-top: 60px;
+    &.no-image {
+        padding-bottom: 40px !important;
+        background-image: none !important;
+        box-shadow: none !important;
+        h2 {
+            +span {
+                font-size: 17px !important;
+                font-weight: $thin !important;
+                line-height: 1.6;
+                @include breakpoint(479) {
+                    font-size: 13px !important;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    @include breakpoint_min(961){
+        @include box-shadow(0 10px 10px 0 rgba(0,0,0,0.08));
+    }
+    @include breakpoint(960){
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    @include breakpoint(479){
+        padding-top: 30px;
+    }
+    span {
+        display: block;
+        text-align: center;
+        font-size: 19px;
+        line-height: 1.5;
+        font-weight: $bold;
+        max-width: 815px;
+        margin: auto;
+        @include breakpoint(960){
+            font-weight: 300;
+            font-size: 20px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        @include breakpoint(479){
+            font-size: 13px !important;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    h2 {
+        font-size: 50px;
+        line-height: 1.125;
+        font-weight: 900;
+        text-align: center;
+        text-shadow: 1px 3px 0 white;
+        margin-top: 0;
+        margin-bottom: 0.4em;
+        @include breakpoint(960) {
+            font-size: 40px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        @include breakpoint(479) {
+            font-size: 40px * 0.75;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @include breakpoint(359) {
+            font-size: 40px * 0.66;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        + span {
+            margin-bottom: 24px;
+            text-shadow: 1px 1px 0 white;
+            @include breakpoint (479) {
+                margin-bottom: 12px;
+            }
+        }
+    }
+    .swiper-container {
+        position: relative;
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            width: 176px;
+            top: 0;
+            bottom: 0;
+            cursor: default;
+            margin-top: 0;
+            height: auto;
+            @include breakpoint(960){
+                width: 48px;
+            }
+            @include breakpoint(479) {
+                margin-top: -30px;
+            }
+            &:before {
+                display: block;
+                position: absolute;
+                width: 36px;
+                height: 68px;
+                top: 102px;
+                cursor: pointer;
+                background-image: url("/images/smart/arrow-next.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                content: '';
+                @include breakpoint(960){
+                    width: 25px;
+                    height: 46px;
+                    top: 95px;
+                }
+                @include breakpoint(479){
+                    width: 18px;
+                    height: 31px;
+                    top: 90px;
+                }
+            }
+            &.swiper-button-disabled {
+                display: none;
+            }
+        }
+        .swiper-button-prev {
+            left: 0;
+            background: -moz-linear-gradient(right, rgba(245,245,245,0) 0%, rgba(245,245,245,0.03) 17%, rgba(245,245,245,0.08) 27%, rgba(245,245,245,0.15) 37%, rgba(245,245,245,0.37) 56%, rgba(245,245,245,0.81) 84%, rgba(245,245,245,0.91) 92%, rgba(245,245,245,0.99) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(right, rgba(245,245,245,0) 0%,rgba(245,245,245,0.03) 17%,rgba(245,245,245,0.08) 27%,rgba(245,245,245,0.15) 37%,rgba(245,245,245,0.37) 56%,rgba(245,245,245,0.81) 84%,rgba(245,245,245,0.91) 92%,rgba(245,245,245,0.99) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to left, rgba(245,245,245,0) 0%,rgba(245,245,245,0.03) 17%,rgba(245,245,245,0.08) 27%,rgba(245,245,245,0.15) 37%,rgba(245,245,245,0.37) 56%,rgba(245,245,245,0.81) 84%,rgba(245,245,245,0.91) 92%,rgba(245,245,245,0.99) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            &:before {
+                left: 22px;
+                @include transform(rotate(-180deg));
+                @include breakpoint(960){
+                    left: 10px;
+                }
+                @include breakpoint(479){
+                    left: 7px;
+                }
+            }
+        }
+        .swiper-button-next {
+            right: 0;
+            background: -moz-linear-gradient(left, rgba(245,245,245,0) 0%, rgba(245,245,245,0.03) 17%, rgba(245,245,245,0.08) 27%, rgba(245,245,245,0.15) 37%, rgba(245,245,245,0.37) 56%, rgba(245,245,245,0.81) 84%, rgba(245,245,245,0.91) 92%, rgba(245,245,245,0.99) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, rgba(245,245,245,0) 0%,rgba(245,245,245,0.03) 17%,rgba(245,245,245,0.08) 27%,rgba(245,245,245,0.15) 37%,rgba(245,245,245,0.37) 56%,rgba(245,245,245,0.81) 84%,rgba(245,245,245,0.91) 92%,rgba(245,245,245,0.99) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, rgba(245,245,245,0) 0%,rgba(245,245,245,0.03) 17%,rgba(245,245,245,0.08) 27%,rgba(245,245,245,0.15) 37%,rgba(245,245,245,0.37) 56%,rgba(245,245,245,0.81) 84%,rgba(245,245,245,0.91) 92%,rgba(245,245,245,0.99) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            &:before {
+                right: 22px;
+                @include breakpoint(960){
+                    right: 10px;
+                }
+                @include breakpoint(479){
+                    right: 7px;
+                }
+            }
+        }
+        .swiper-wrapper {
+            text-align: center;
+            .swiper-slide {
+                display: inline-block;
+                vertical-align: top;
+                max-width: 275px;
+                height: auto;
+                color: #333;
+                @include breakpoint(960){
+                    max-width: 227px;
+                }
+                @include breakpoint(479){
+                    max-width: 150px;
+                }
+                img {
+                    vertical-align: top;
+                    max-width: 100%;
+                }
+                &:hover {
+                    p {
+                        a {
+                            color: $orange;
+                        }
+                    }
+                }
+                p {
+                    font-size: 19px;
+                    text-align: center;
+                    font-family: $family;
+                    line-height: 1.26;
+                    a {
+                        color: #333;
+                    }
+                    @include breakpoint(960) {
+                        font-size: 22px;
+                    }
+                    @include breakpoint(479){
+                        font-size: 15px;
+                    }
+                }
+            }
+            .swiper-slide.big {
+                max-width: 380px;
+                @include breakpoint(960){
+                    max-width: 240px;
+                }
+                @include breakpoint(479){
+                    max-width: 160px;
+                }
+            }
+        }
+    }
+}
+.brand-slider.second {
+    padding-top: 40px !important;
+}
+.brand-slider.third {
+    background-image: none;
+    padding-top: 0;
+    @include box-shadow(none);
+}
+    .arrows {
+        position: relative;
+        width: 150px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        @include breakpoint (479) {
+            width: 90px;
+            margin-bottom: 12px;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            position: relative;
+            top: 0;
+            margin-top: 0px;
+        }
+        .swiper-button-next {
+            right: 0;
+        }
+        .swiper-button-prev {
+            left: 0;
+        }
+    }
+
+    .swiper-scrollbar {
+        position: relative !important;
+        top: 0;
+        bottom: auto;
+        margin-bottom: 5px;
+        left: 0;
+        width: 100%;
+    }

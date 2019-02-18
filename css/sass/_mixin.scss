@@ -1,0 +1,169 @@
+
+@mixin liner-gradient($deg, $color, $color-2...){
+    background:linear-gradient($deg, $color, $color-2); 
+}
+@mixin backface-visibility ($data) {
+    -webkit-backface-visibility: $data;
+    -moz-backface-visibility: $data;
+    backface-visibility: $data;
+}
+@mixin box-sizing ($box_sizing) {
+    -webkit-box-sizing: $box_sizing;
+    -moz-box-sizing: $box_sizing;
+    box-sizing: $box_sizing;
+}
+@mixin box-shadow ($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+@mixin border-radius ($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin transform-origin ($data) {
+    -webkit-transform-origin: $data;
+    -moz-transform-origin: $data;
+    -ms-transform-origin: $data;
+    -o-transform-origin: $data;
+    transform-origin: $data;
+}
+@mixin transform ($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform;
+}
+@mixin transition ($transition...) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+@mixin animation ($animation) {
+    -webkit-animation: $animation;
+    animation: $animation;
+}
+@mixin opacity ($opacity) {
+    -khtml-opacity: $opacity;
+    -moz-opacity: $opacity;
+    opacity: $opacity;
+}
+@mixin appearance ($appearance) {
+    -webkit-appearance: $appearance;
+    -moz-appearance: $appearance;
+    -ms-appearance: $appearance;
+    -o-appearance: $appearance;
+    appearance: $appearance;
+}
+@mixin user-select ($data) {
+    -webkit-user-select: $data;
+    -moz-user-select: $data;
+    -ms-user-select: $data;
+    user-select: $data;
+}
+@mixin position-sticky(){
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+}
+@mixin breakpoint ($point) {
+    @media (max-width: 1px * $point) {
+        @content;
+    }
+}
+@mixin breakpoint_h ($point) {
+    @media (max-height: 1px * $point) {
+        @content;
+    }
+}
+@mixin breakpoint_min ($point) {
+    @media (min-width: 1px * $point) {
+        @content;
+    }
+}
+@mixin breakpoint_min_max ($min, $max) {
+    @media (min-width: 1px * $min) and (max-width: 1px * $max) {
+        @content;
+    }
+}
+@mixin media_query ($media) {
+    @media ($media) {
+        @content;
+    }
+}
+@mixin iphone () {
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px){
+        @content;
+    }
+}
+@mixin iphone_portrait () {
+    /* Portrait */
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+        @content;
+    }
+}
+@mixin iphone_landscape () {
+    /* Landscape */
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+        @content;
+    }
+}
+@mixin filter ($filter) {
+    -webkit-filter: $filter;
+    -moz-filter: $filter;
+    -ms-filter: $filter;
+    -o-filter: $filter;
+    filter: $filter;
+}
+@mixin columns($columns){
+    -webkit-column-count: $columns;
+    -moz-column-count: $columns;
+    -ms-column-count: $columns;
+    -o-column-count: $columns;
+    column-count: $columns;
+}
+@mixin column-count($column-count){
+    -webkit-column-count: $column-count;
+    -moz-column-count: $column-count;
+    -ms-column-count: $column-count;
+    -o-column-count: $column-count;
+    column-count: $column-count;
+}
+
+@mixin placeholder () {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &::-moz-placeholder          {
+        @content;
+    }/* Firefox 19+ */
+    &:-moz-placeholder           {
+        @content;
+    }/* Firefox 18- */
+    &:-ms-input-placeholder      {
+        @content;
+    }
+}
+
+@mixin firefox(){
+    @-moz-document url-prefix() {
+        @content;
+    }
+}

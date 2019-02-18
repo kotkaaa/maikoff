@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="5">
+        <file>
+            <url>js/smart/common.js</url>
+            <bookmark id="5">
+                <name/>
+                <line>248</line>
+                <key/>
+            </bookmark>
+            <bookmark id="4">
+                <name/>
+                <line>648</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>module/catalog.php</url>
+            <bookmark id="2">
+                <name/>
+                <line>159</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="5.3"/>
+        <group name="LAST_PHP"/>
+        <group>
+            <file>file:/D:/openserver/OpenServer/domains/maikoff.new/trunk/admin/main.php</file>
+            <file>file:/D:/openserver/OpenServer/domains/maikoff.new/trunk/include/classes/Filters.php</file>
+            <file>file:/D:/openserver/OpenServer/domains/maikoff.new/trunk/admin/attributes.php</file>
+            <file>file:/D:/openserver/OpenServer/domains/maikoff.new/trunk/tpl/backend/weblife/ajax/attributes_values.tpl</file>
+            <file>file:/D:/openserver/OpenServer/domains/maikoff.new/trunk/include/functions/base.php</file>
+            <file>file:/D:/openserver/OpenServer/domains/maikoff.new/trunk/tpl/backend/weblife/module/attributes.tpl</file>
+            <file>file:/D:/openserver/OpenServer/domains/maikoff.new/trunk/module/catalog.php</file>
+            <file>file:/D:/openserver/OpenServer/domains/maikoff.new/trunk/admin/ajax/attributes_values.php</file>
+            <file>file:/D:/openserver/OpenServer/domains/maikoff.new/trunk/module/prints.php</file>
+            <file>file:/D:/openserver/OpenServer/domains/maikoff.new/trunk/include/helpers/MetaHelper.php</file>
+            <file>file:/D:/openserver/OpenServer/domains/maikoff.new/trunk/seo/redirect.php</file>
+        </group>
+    </open-files>
+</project-private>

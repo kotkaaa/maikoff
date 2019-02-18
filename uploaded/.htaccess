@@ -1,0 +1,22 @@
+### Подсказать браузеру схему кеширования через заголовки в ответе сервера
+<IfModule mod_expires.c>
+    # Enable expires
+    ExpiresActive On
+
+    # Default a cache expiration
+    ExpiresDefault "access plus 10 month"
+
+    # Images
+    ExpiresByType image/gif                 "access plus 1 month"
+    ExpiresByType image/png                 "access plus 1 month"
+    ExpiresByType image/jpg                 "access plus 1 month"
+    ExpiresByType image/jpeg                "access plus 1 month"
+</IfModule>
+
+
+### Удалить заголовок ETag (иначе есть проблемы с кешированием при включенном сжатии)
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+
+FileETag None

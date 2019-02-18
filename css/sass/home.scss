@@ -1,0 +1,150 @@
+@import "common";
+@import "homeslider";
+@import "top-feature";
+@import "style-slider";
+@import "features";
+@import "popular-brand-slider";
+@import "seo-text";
+
+.product-slider {
+    + .product-slider-2 {
+        padding-top: 0;
+    }
+}
+.brand-slider {
+    + .product-slider-2 {
+        @include breakpoint_min(961){
+            padding-top: 70px;
+        }
+    }
+}
+.section-features,
+.section-under-features {
+    background-color: $white;
+}
+
+.segmentations {
+    padding-bottom: 70px;
+    @include breakpoint(479){
+        padding-bottom: 70px * 0.75;
+    }
+    @include breakpoint(359){
+        padding-bottom: 70px * 0.66;
+    }
+    .above-sign {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .blocks {
+        margin-top: 35px;
+        padding-left: 23px;
+        padding-right: 23px;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        @include breakpoint(960){
+            flex-wrap: wrap;
+            padding-left: 20px;
+            padding-right: 20px;
+            justify-content: center;
+        }
+        @include breakpoint(479){
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .block {
+            width: 32%;
+            text-align: center;
+            font-size: 17px;
+            line-height: 1.42;
+            color: $black;
+            text-decoration: none;
+            padding-top: 40px;
+            padding-bottom: 25px;
+            @include breakpoint(1099){
+                font-size: 14px;
+            }
+            @include breakpoint(960){
+                width: 48.5%;
+            }
+            @include breakpoint(640){
+                width: 100%;
+                font-size: 22px;
+            }
+            @include breakpoint(479){
+                font-size: 22px * 0.75;
+            }
+            @include breakpoint(359){
+                font-size: 22px * 0.66;
+            }
+            &:hover {
+                outline-style: solid;
+                outline-width: 4px;
+                outline-offset: -4px;
+                @include box-shadow(0px 0px 15px 0px rgba(0, 0, 0, 0.18));
+            }
+            &:nth-child(1){
+                background-image: url("/images/site/smart/bg_pattern_blue.jpg");
+                &:hover {
+                    outline-color: #006dcc;
+                }
+            }
+            &:nth-child(2){
+                background-image: url("/images/site/smart/bg_pattern_purple.jpg");
+                @include breakpoint_min_max(641, 960){
+                    margin-left: 3%;
+                }
+                @include breakpoint(640){
+                    margin-top: 20px;
+                }
+                @include breakpoint(479){
+                    margin-top: 15px;
+                }
+                &:hover {
+                    outline-color: #a600e7;
+                }
+            }
+            &:nth-child(3){
+                background-image: url("/images/site/smart/bg_pattern_pink.jpg");
+                @include breakpoint(960){
+                    margin-top: 20px;
+                }
+                @include breakpoint(479){
+                    margin-top: 15px;
+                }
+                &:hover {
+                    outline-color: #f51c8f;
+                }
+            }
+            img {
+                vertical-align: top;
+                margin-bottom: 30px;
+                @include breakpoint(479){
+                    margin-bottom: 30px * 0.75;
+                    max-height: 141px * 0.75;
+                }
+                @include breakpoint(359){
+                    margin-bottom: 30px * 0.66;
+                    max-height: 141px * 0.66;
+                }
+            }
+            h3 {
+                font-size: 32px;
+                font-weight: 800;
+                margin-top: 0;
+                margin-bottom: 10px;
+                @include breakpoint_min_max(641, 1099){
+                    font-size: 25px;
+                }
+                @include breakpoint(479){
+                    font-size: 32px * 0.75;
+                    margin-bottom: 8px;
+                }
+                @include breakpoint(359){
+                    font-size: 32px * 0.66;
+                    margin-bottom: 7px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30.11.2017, 16:58:56
+    Author     : user5
+*/
+
+.homeslider {
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        cursor: default;
+        margin-top: 0;
+        height: auto;
+        @include transform(translateY(-50%));
+        background-image: none;
+        &:before {
+            display: block;
+            width: 36px;
+            height: 68px;
+            cursor: pointer;
+            background-image: url("/images/smart/arrow-next.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            content: '';
+            @include breakpoint(960){
+                width: 25px;
+                height: 46px;
+                top: 95px;
+            }
+            @include breakpoint(479){
+                width: 18px;
+                height: 31px;
+                top: 90px;
+            }
+        }
+        &.swiper-button-disabled {
+            display: none;
+        }
+    }
+    .swiper-button-prev {
+        left: 50%;
+        margin-left: -690px;
+        @include breakpoint(1422){
+            left: 20px;
+            margin-left: 0;
+        }
+        @include breakpoint(960){
+            left: 10px;
+        }
+        @include breakpoint(479){
+            left: 7px;
+        }
+        &:before {
+            @include transform(rotate(-180deg));
+        }
+    }
+    .swiper-button-next {
+        right: 50%;
+        margin-right: -690px;
+        @include breakpoint(1422){
+            right: 20px;
+            margin-right: 0;
+        }
+        @include breakpoint(960){
+            right: 10px;
+        }
+        @include breakpoint(479){
+            right: 7px;
+        }
+    }
+    .swiper-slide {
+        overflow: hidden;
+        img {
+            vertical-align: top;
+            max-width: 100%;
+            @include breakpoint(800){
+                max-width: none;
+                max-height: 208px;
+                position: relative;
+                left: 50%;
+                @include transform(translateX(-50%));
+            }
+        }
+    }
+    .swiper-pagination {
+        font-size: 0;
+        bottom: 25px;
+        margin: 0;
+        .swiper-pagination-bullet {
+            margin-left: 8px;
+            margin-right: 8px;
+            width: 11px;
+            height: 11px;
+            background-color: #383838;
+            @include border-radius(50%);
+            @include opacity(1);
+            &.swiper-pagination-bullet-active {
+                background-color: #eb5b26;
+                @include transform(scale(1.3));
+            }
+            &:hover {
+                background-color: #eb5b26;
+                @include transform(scale(1.3));
+            }
+        }
+    }
+}

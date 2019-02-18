@@ -1,0 +1,1 @@
+<p class="web-life">Сайт разработан <a href="//weblife.ua" target="_blank" rel="nofollow">Weblife &REG;</a></p>

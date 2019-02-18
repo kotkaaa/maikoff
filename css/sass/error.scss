@@ -1,0 +1,64 @@
+@import "common";
+
+/*TOP BANNER*/
+.top-banner {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    background-image: url(/images/tmp/banners/banner-6.jpg);
+    min-height: 370px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 50px;
+    @include breakpoint (960) {
+        background-position: center center;
+        min-height: 240px;
+    }
+    @include breakpoint (479) {
+        margin-bottom: 30px;
+    }
+    h2 {
+        color: #fff;
+        font-size: 50px;
+        line-height: 1.18;
+        font-weight: $bold;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 12px;
+        @include breakpoint (960) {
+            font-size: 36px;
+        }
+        @include breakpoint (479) {
+            font-size: 28px;
+        }
+        @include breakpoint (359) {
+            font-size: 24px;
+        }
+    }
+    p {
+        color: #fff;
+        font-size: 19px;
+        line-height: 1.7;
+        font-weight: $thin;
+        text-align: center;
+        margin: 0;
+        @include breakpoint (960) {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        @include breakpoint (479) {
+            font-weight: 400;
+        }
+        @include breakpoint (359) {
+            font-size: 14px;
+        }
+        a {
+            text-decoration: underline;
+            color: #fff;
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+}

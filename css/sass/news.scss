@@ -1,0 +1,124 @@
+@import "common";
+@import "subscribe-news";
+@import "pagination";
+
+.article-news {
+    max-width: 1020px;
+    display: inline-block;
+    padding-top: 30px;
+    @include breakpoint (960) {
+        display: block;
+    }
+    h1 {
+        font-size: 42px;
+        font-weight: 700;
+        color: #333;
+        line-height: 1.05;
+        margin-top: -10px;
+        @include breakpoint (960) {
+            font-size: 38px;
+        }
+        @include breakpoint (479) {
+            font-size: 25px;
+        }
+    }
+    a {
+        color: $orange;
+    }
+    .article {
+        margin-bottom: 65px;
+        @include breakpoint (960) {
+            margin-bottom: 50px;
+        }
+        @include breakpoint (479) {
+            margin-bottom: 25px;
+        }
+        img {
+            padding-right: 35px;
+            padding-bottom: 15px;
+            float: left;
+            /*width: 465px;*/
+            max-width: 280px;
+            height: auto;
+            @include breakpoint (960) {
+                float: none;
+                margin-bottom: 25px;
+                max-width: 100%;
+            }
+        }
+        .article-info {
+            @include breakpoint (960) {
+                margin-left: 0;
+            }
+            >p {
+                margin: 0;
+                margin-bottom: 10px;
+                a {
+                    font-size: 24px;
+                    font-weight: $bold;
+                    line-height: 1.1;
+                    color: $black;
+                    &:hover {
+                        color: $orange;
+                    }
+                    @include breakpoint (479) {
+                        font-size: 16.5px;
+                    }
+                }
+            }
+            p {
+                font-size: 16px;
+                line-height: 1.5;
+                font-weight: $thin;
+                color: #484848;
+                @include breakpoint (960) {
+                    font-size: 22px;
+                }
+                @include breakpoint (479) {
+                    font-size: 15px;
+                }
+            }
+            .read-more {
+                font-size: 16px;
+                line-height: 1.5;
+                font-weight: $thin;
+                color: #484848;
+                text-decoration: underline;
+                &:hover {
+                    color: $orange;
+                    &:after {
+                        content: ' ';
+                        width: 13px;
+                        height: 13px;
+                        background-image: url('/images/smart/arrow-read-more-orange.png');
+                    }
+                }
+                &:after {
+                    content: ' ';
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: 12px;
+                    width: 13px;
+                    height: 13px;
+                    background-image: url('/images/smart/arrow-read-more.png');
+                    background-repeat: no-repeat;
+                }
+                @include breakpoint (960) {
+                    font-size: 22px;
+                    font-weight: 500;
+                }
+                @include breakpoint (479) {
+                    font-size: 15px;
+                }
+            }
+            br {
+                @include breakpoint (960) {
+                    display: none;
+                }
+            }
+        }
+        .article-date {
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,181 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18.03.2018, 17:50:53
+    Author     : Alisa
+*/
+
+@import "../../../../css/sass/fonts";
+@import "../../../../css/sass/var";
+@import "../../../../css/sass/mixin";
+
+body {
+	background-color: #FFFFFF;
+	font-family: $family;
+	font-size: $font;
+	scrollbar-3dlight-color: #F0F0EE;
+	scrollbar-arrow-color: #676662;
+	scrollbar-base-color: #F0F0EE;
+	scrollbar-darkshadow-color: #DDDDDD;
+	scrollbar-face-color: #E0E0DD;
+	scrollbar-highlight-color: #F0F0EE;
+	scrollbar-shadow-color: #F0F0EE;
+	scrollbar-track-color: #F5F5F5;
+}
+
+pre {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.example1 {
+    font-weight: bold;
+    font-size: 14px
+}
+
+.example2 {
+    font-weight: bold;
+    font-size: 12px;
+    color: #FF0000
+}
+
+/* Basic formats */
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* Global align classes */
+
+.left {
+    text-align: inherit;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.full {
+    text-align: justify
+}
+
+/* Image and table specific aligns */
+
+img.left, 
+table.left {
+    float: left;
+    text-align: inherit;
+}
+
+img.center, 
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: inherit;
+}
+
+img.center {
+    display: block;
+}
+
+img.right, 
+table.right {
+    float: right;
+    text-align: inherit;
+}
+
+
+table.size-table-grid {
+    @include border-radius(3px);
+    td,
+    th {
+        white-space: nowrap;
+    }
+    thead {
+        tr {
+            height: 45px;
+            th {
+                padding-left: 5px;
+                padding-right: 5px;
+                border-top: medium none;
+                border-right: medium none;
+                border-left: medium none;
+                font-weight: $bold;
+                font-size: 16px;
+            }
+        }
+    }
+    tbody {
+        tr {
+            background-color: #fff;
+            &:nth-child(2n) {
+                background-color: #fcfcfc;
+            }
+            .image {
+                border-top: medium none;
+                border-right: medium none;
+                border-left: medium none;
+                border-bottom: none;
+            }
+        }
+        img {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .thin {
+            th {
+                height: 35px;
+                font-weight:500;
+                border-top: medium none;
+                border-right: medium none;
+            }
+            td {
+                border-top: medium none;
+                border-right: medium none;
+                width: 100px;
+                height: 30px;
+                text-align: center;
+                font-weight: 300;
+                padding-left: 5px;
+                padding-right: 5px;
+                white-space: nowrap;
+            }
+            &:last-child {
+                td {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    tfoot {
+        tr {
+            td {
+                font-size: 14px;
+                font-weight: $thin;
+                color: #333;
+                line-height: 1.4;
+                padding-left: 20px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-right: medium none;
+                border-left: medium none;
+                border-bottom: none;
+            }
+        }
+    }
+}

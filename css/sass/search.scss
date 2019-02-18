@@ -1,0 +1,73 @@
+@import "common";
+@import "selected";
+@import "product-grid";
+@import "pagination";
+@import "toolbar";
+
+.content-box {
+    padding-top: 35px;
+    .flex {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        @include breakpoint(960) {
+            display: block;
+        }
+    }
+    .left-box {
+        width: 275px;
+        min-width: 275px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+        @include breakpoint(960) {
+            display: none;
+        }
+    }
+    .right-box {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 20px;
+        @include breakpoint(960) {
+            width: auto;
+            margin: 0;
+            padding: 0;
+        }
+        .search-result-sign {
+            @include breakpoint (960) {
+                padding-left: 21px;
+                padding-right: 40px;
+            }
+            @include breakpoint (479) {
+                padding-left: 14px;
+                padding-right: 25px;
+            }
+            h1 {
+                color: #333;
+                font-size: 42px;
+                line-height: 1.05;
+                font-weight: $bold;
+                margin-top: 0;
+                margin-bottom: 18px;
+                @include breakpoint (960) {
+                    font-size: 38px;
+                }
+                @include breakpoint (479) {
+                    font-size: 25px;
+                }
+            }
+            p {
+                font-weight: 300;
+                font-size: 16px;
+                margin-bottom: 18px;
+                @include breakpoint (960) {
+                    font-size: 20px;
+                }
+                @include breakpoint (479) {
+                    font-size: 13.5px;
+                }
+            }
+        }
+    }
+}

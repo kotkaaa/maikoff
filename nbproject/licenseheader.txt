@@ -1,0 +1,5 @@
+${licenseFirst}
+${licensePrefix}WebLife CMS
+${licensePrefix}Created on ${date}, ${time}
+${licensePrefix}Developed by http://weblife.ua/
+${licenseLast}

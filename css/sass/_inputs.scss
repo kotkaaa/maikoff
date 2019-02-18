@@ -1,0 +1,195 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01.12.2017, 12:19:37
+    Author     : user5
+*/
+
+/*inputs*/
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+select,
+textarea {
+    font-family: $family;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+    background-color: #FFFFFF;
+    @include breakpoint(960){
+        font-size: 22px;
+    }
+    @include breakpoint(479){
+        font-size: 22px * 0.66;
+    }
+    &:not(.input-fx) {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #d3d3d3;
+        @include border-radius(3px);
+        &:focus,
+        &.focus {
+            @include box-shadow(2px 2px 3px 0px rgba(0, 0, 0, 0.15));
+        }
+    }
+    &.error {
+        color: #eb490f;
+        border-color: #eb490f;
+        + .nice-select,
+        + .select2-container--default .select2-selection--single {
+            border-color: #eb490f !important;
+        }
+    }
+    &.input-fx {
+        border-color: #FFFFFF;
+        @include box-shadow(0px 0px 14px 0px rgba(0, 0, 0, 0.15));
+    }
+}
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+textarea {
+    padding-left: 13px;
+    padding-right: 13px;
+    @include placeholder(){
+        color: #6e6e6e;
+    }
+    @include breakpoint(960){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @include breakpoint(479){
+        padding-left: (20px * 0.66);
+        padding-right: (20px * 0.66);
+    }
+}
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+select {
+    height: 39px;
+    @include breakpoint(960){
+        height: 54px;
+    }
+    @include breakpoint(479){
+        height: (54px * 0.66);
+    }
+    &.input-xl {
+        height: 54px;
+        @include breakpoint(960){
+            height: 65px;
+        }
+        @include breakpoint(479){
+            height: (65px * 0.66);
+        }
+    }
+}
+textarea {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    line-height: 1.4;
+    resize: none;
+    @include breakpoint(479){
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+}
+select {
+    @include appearance(none);
+    padding-left: 13px;
+    padding-right: 36px;
+    background-image: url("/images/smart/icons/svg/down-arrow.svg");
+    background-position: right 13px top 50%;
+    background-repeat: no-repeat;
+    background-size: 10px 6px;
+    @include breakpoint_min_max(480, 960){
+        font-size: 22px;
+        background-size: 20px 12px;
+        background-position: right 26px top 50%;
+        padding-left: 20px;
+        padding-right: 72px;
+    }
+}
+.checkbox,
+.radio {
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 16px;
+    @include breakpoint_min_max(480, 960){
+        font-size: 22px;
+    }
+    &:before {
+        display: inline-block;
+        background-color: $white;
+        border: 1px solid #d3d3d3;
+        margin-right: 10px;
+        background-repeat: no-repeat;
+        content: "";
+        @include breakpoint_min_max(480, 960){
+            margin-right: 20px;
+        }
+    }
+}
+.checkbox {
+    &:before {
+        vertical-align: -9px;
+        width: 28px;
+        height: 28px;
+        @include border-radius(3px);
+        @include breakpoint_min_max(480, 960){
+            width: 46px;
+            height: 46px;
+            vertical-align: -14px;
+        }
+    }
+}
+.radio {
+    &:before {
+        vertical-align: -5px;
+        width: 22px;
+        height: 22px;
+        @include border-radius(50%);
+        @include breakpoint_min_max(480, 960){
+            width: 40px;
+            height: 40px;
+            vertical-align: -11px;
+        }
+    }
+}
+input[type="checkbox"] {
+    &:checked {
+        + .checkbox {
+            font-weight: 500;
+            &:before {
+                background-image: url("/images/smart/inputs/inputs.png");
+                background-position: -10px -74px;
+                @include breakpoint_min_max(480, 960){
+                    background-position: -10px -10px;
+                }
+            }
+        }
+    }
+}
+input[type="radio"] {
+    &:checked {
+        + .radio {
+            font-weight: 500;
+            &:before {
+                background-image: url("/images/smart/inputs/inputs.png");
+                background-position: -56px -74px;
+                @include breakpoint_min_max(480, 960){
+                    background-position: -74px -10px;
+                }
+            }
+        }
+    }
+}

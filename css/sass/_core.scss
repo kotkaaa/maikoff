@@ -1,0 +1,162 @@
+@import "fonts";
+@import "var";
+@import "mixin";
+@import "inputs";
+@import "buttons";
+
+/*main-setings*/
+* {
+    outline: none;
+    @include transform-origin (center); 
+    @include box-sizing (border-box); 
+    max-height:1000000px;
+}
+*:focus {
+    outline: none;
+}
+*:before,
+*:after {
+    @include box-sizing (border-box);
+}
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /*scroll-behavior: smooth;*/
+    font-family: $family;
+    font-size: $font;
+    color: $black;
+    min-width: 320px;
+    background-color: $main-background;
+    overflow: visible;// !important;
+    &.m-noscroll {
+        @include breakpoint(960){
+            overflow: hidden;
+            position: fixed;
+        }
+    }
+    &.noscroll {
+        @include breakpoint_min(901){
+            overflow: hidden;
+            position: fixed;
+        }
+    }
+    &.noswipe {
+        @include breakpoint_min(901){
+            overflow: hidden;
+        }
+    }
+}
+button {
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+}
+select {
+    cursor: pointer;
+    &::-ms-expand {
+        display: none;
+    }
+}
+a{
+   text-decoration: none;
+/*   color: $color-link-static;*/
+   &:hover{
+/*       color: $color-link-hover;*/
+   }
+}
+input,
+textarea,
+select,
+button {
+    font-family: $family;
+}
+input{
+    border: none;
+}
+input[type="search"]{
+   @include appearance(none);
+}
+input[type="search"] {
+   @include appearance (textfield);
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    @include appearance (none);
+}
+iframe{
+    border: none !important;
+    &.iframe{
+        width: 100%;
+    }
+}
+.main-box{
+    min-width:100%;
+    width: 100%;
+}
+.pull-right {
+    float: right !important;
+}
+.pull-left {
+    float: left !important;
+}
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+.show{
+    display: block !important;
+}
+.rel{
+    position: relative !important;
+}
+.static{
+    position: static !important;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.noscroll {
+    overflow: hidden;
+}
+.noswipe {
+    @include breakpoint(900) {
+        overflow: hidden;
+    }
+}
+.nomargin {
+    margin: 0;
+}
+.nomargin-top {
+    margin-top: 0;
+}
+.nomargin-left {
+    margin-left: 0;
+}
+.nomargin-right {
+    margin-right: 0;
+}
+.nomargin-bottom {
+    margin-bottom: 0;
+}
+.container {
+    max-width: 1422px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include breakpoint(479){
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}
+
+jdiv {
+    z-index: 1 !important;
+}

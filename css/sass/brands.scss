@@ -1,0 +1,149 @@
+@import "common";
+
+@import "seo-text";
+
+
+/*TOP BANNER*/
+.top-banner {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    background-image: url(/images/tmp/banners/banner-4.jpg);
+    min-height: 370px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 55px;
+    @include breakpoint (960) {
+        background-position: center center;
+        min-height: 240px;
+        margin-bottom: 35px;
+    }
+    @include breakpoint (479) {
+        margin-bottom: 20px;
+    }
+    h2 {
+        color: #fff;
+        font-size: 50px;
+        line-height: 1.18;
+        font-weight: $bold;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 12px;
+        @include breakpoint (960) {
+            font-size: 36px;
+        }
+        @include breakpoint (479) {
+            font-size: 28px;
+        }
+        @include breakpoint (359) {
+            font-size: 24px;
+        }
+    }
+    p {
+        color: #fff;
+        font-size: 19px;
+        line-height: 1.7;
+        font-weight: $thin;
+        text-align: center;
+        margin: 0;
+        @include breakpoint (960) {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        @include breakpoint (479) {
+            font-weight: 400;
+        }
+        @include breakpoint (359) {
+            font-size: 14px;
+        }
+    }
+    .banner-brands {
+        margin: auto;
+        margin-top: 70px;
+        @include breakpoint (960) {
+            display: none;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            li {
+                list-style: none;
+                a {
+                    font-size: 17px;
+                    line-height: 1.65;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    color: #fff;
+                    text-decoration: underline;
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.brand-block {
+    position: relative;
+    max-width: 1060px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include breakpoint (479) {
+        margin-bottom: 55px * 0.66;
+    }
+    img {
+        float: left;
+        padding-right: 40px;
+        @include breakpoint (960) {
+            float: none;
+        }
+    }
+    div {
+        h2 {
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: $black;
+            margin-bottom: 0;
+            @include breakpoint (960) {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 34px;
+            }
+            @include breakpoint (479) {
+                font-size: 22px;
+            }
+            a {
+                color: inherit;
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+        p {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: $thin;
+            margin-top: 5px;
+            @include breakpoint (960) {
+                font-size: 20px;
+            }
+            @include breakpoint (479) {
+                font-size: 14px;
+            }
+        }
+    }
+    + .brand-slider {
+        margin-bottom: 55px;
+        @include breakpoint (479) {
+            margin-bottom: 55px * 0.66;
+        }
+    }
+}

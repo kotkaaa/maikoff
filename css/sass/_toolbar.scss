@@ -1,0 +1,56 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10.01.2018, 15:29:43
+    Author     : user5
+*/
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include breakpoint_min(961){
+        display: none;
+    }
+    @include breakpoint(479){
+        font-size: 14px;
+        padding-left: 14px;
+        padding-right: 14px;
+        margin-bottom: 14px;
+    }
+    a {
+        color: $black;
+        em {
+            font-style: normal;
+            color: $orange;
+        }
+    }
+    .catalog-print-trigger {
+        color: $white;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        @include breakpoint_min(961){
+            display: none;
+        }
+        @include breakpoint_min_max(480, 960){
+            font-size: 25px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+        @include breakpoint(479){
+            margin-bottom: 20px * 0.75;
+        }
+        @include breakpoint(359){
+            margin-bottom: 20px * 0.66;
+        }
+    }
+}

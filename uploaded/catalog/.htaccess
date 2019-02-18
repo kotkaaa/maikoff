@@ -1,0 +1,14 @@
+Deny from all
+#DirectoryIndex index.php
+<FilesMatch "(?!(small|middle|thumb))(.*)+\.(gif|jpg|png|JPG|JPEG|jpeg)$">
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^(.*)$ /interactive/watermark_catalog.php [T=application/x-httpd-php,L,QSA]
+</FilesMatch>
+<Files "*.php">
+    Deny from all
+</Files>
+<Files "*.pl">
+    Deny from all
+</Files>
+Allow from all

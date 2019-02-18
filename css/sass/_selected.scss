@@ -1,0 +1,64 @@
+.selected-filter {
+    .selected-items {
+        padding-left: 65px;
+    }
+    .nice-select {
+        /*padding-left: 0 !important;*/
+        background: transparent;
+    }
+    .nice-select-filter form .select-nice:after {
+        
+    }
+    .current {
+        margin-right: 0 !important;
+    }
+    display: flex;
+    .select {
+        border: none;
+        .option.selected.focus {
+            display: none !important;
+        }
+    }
+    @include breakpoint(960) {
+        display: none;
+    }
+    a {
+        color: #6e6e6e;
+        font-weight: $bold;
+        font-size: 16px;
+        line-height: 2.5;
+        &:hover {
+            color: $orange;
+            span {
+                color: $orange;
+            }
+        }
+        &:last-child {
+            font-weight: $thin;
+        }
+    }
+    span {
+        font-size: 18px;
+        color: #6e6e6e;
+        margin-right: 20px;
+        font-weight: 300;
+        
+    }
+}
+.select-good {
+    display: none;
+    @include breakpoint (960) {
+        display: block;
+        margin-left: 10px;
+    }
+    p {
+        margin: 0;
+        color: #333;
+        font-weight: $bold;
+        font-size: 20px;
+        line-height: 2;
+        @include breakpoint(479) {
+            font-size: 13px;
+        }
+    }
+}

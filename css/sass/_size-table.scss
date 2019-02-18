@@ -1,0 +1,193 @@
+.table-sign {
+    display: none;
+    font-size: 22px;
+    font-weight: $thin;
+    color: #333;
+    margin-top: 0;
+    @include breakpoint(960){
+        display: block;
+    }
+    @include breakpoint(479){
+        font-size: 22px * 0.66;
+    }
+}
+.size-table {
+    .overflow-scroll {
+        @include breakpoint(960){
+            overflow: auto;
+        }
+        @include breakpoint(480){
+            overflow: scroll;
+        }
+    }
+    table,
+    th,
+    td {
+        border: 1px solid #d3d3d3;
+        border-spacing: 0;
+    }
+    table {
+        width: 575px;
+        margin-bottom: 25px;
+        border-collapse: separate;
+        @include border-radius(3px);
+        @include breakpoint(960){
+            margin-left: 1px;
+            width: 740px;
+            margin-bottom: 0;
+            border-collapse: collapse;
+            border: none;
+        }
+        @include breakpoint(479){
+            width: 440px;
+        }
+        thead {
+            tr {
+                height: 45px;
+                @include breakpoint(960){
+                    height: auto;
+                }
+                th {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    border-top: medium none;
+                    border-right: medium none;
+                    border-left: medium none;
+                    font-weight: $bold;
+                    font-size: 16px;
+                    @include breakpoint(960){
+                        font-size: 22px;
+                        border: none;
+                        text-align: left;
+                        padding-bottom: 10px;
+                        font-weight: 300;
+                    }
+                    @include breakpoint(479){
+                        font-size: 22px * 0.66;
+                    }
+                }
+            }
+        }
+        tbody {
+            @include breakpoint(960){
+                border: 1px solid #d3d3d3;
+            }
+            .thin {
+                td,
+                th {
+                    white-space: nowrap;
+                }
+            }
+            tr {
+                background-color: #fff;
+                &:nth-child(2n) {
+                    background-color: #fcfcfc;
+                }
+                .image {
+                    border-top: medium none;
+                    border-right: medium none;
+                    border-left: medium none;
+                    border-bottom: none;
+                    text-align: center;
+                }
+            }
+            .thin {
+                th {
+                    height: 35px;
+                    font-weight:500;
+                    border-top: medium none;
+                    border-right: medium none;
+                    @include breakpoint(960){
+                        height: 50px;
+                        font-size: 19px;
+                        text-align: center;
+                        border-right: 1px solid #d3d3d3;
+                    }
+                    @include breakpoint(479) {
+                        font-size: 19px * 0.75;
+                        height: 35px;
+                        padding: 0 4px;
+                    }
+                    @include breakpoint(359) {
+                        font-size: 19px * 0.66;
+                    }
+                }
+                td {
+                    border-top: medium none;
+                    border-right: medium none;
+                    width: 92px;
+                    height: 30px;
+                    text-align: center;
+                    font-weight: 300;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    white-space: nowrap;
+                    @include breakpoint(960){
+                        width: 140px;
+                        height: 45px;
+                        font-size: 19px;
+                        border-right: 1px solid #d3d3d3;
+                    }
+                    @include breakpoint(479){
+                        width: 100px;
+                        height: 30px;
+                        font-size: 13px;
+                    }
+                }
+                &:last-child {
+                    td {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+        tfoot {
+            -webkit-text-size-adjust: none;
+            tr {
+                td {
+                    padding-left: 20px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    border-right: medium none;
+                    border-left: medium none;
+                    border-bottom: none;
+                    @include breakpoint(960){
+                        padding-bottom: 35px;
+                    }
+                    @include breakpoint(479){
+                        padding-top: 10px;
+                        padding-bottom: 20px;
+                    }
+                    span {
+                        font-size: 14px;
+                        font-weight: $thin;
+                        color: #333;
+                        line-height: 1.4;
+                        @include breakpoint(479) {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.foot-info {
+    display: none;
+    margin-top: 25px;
+    .table-footer {
+        font-size: 16px;
+        font-weight: $thin;
+        color: #333;
+        line-height: 1.4;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        @include breakpoint(479){
+            font-size: 11px;
+        }
+    }
+    @include breakpoint(960){
+        display: block;
+        margin-bottom: 25px;
+    }
+}

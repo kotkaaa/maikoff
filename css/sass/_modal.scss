@@ -1,0 +1,653 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24.01.2018, 8:58:40
+    Author     : user5
+*/
+
+@import "ext/remodal";
+@import "ext/remodal-default-theme";
+/*remodal default theme*/
+.remodal-overlay {
+    background: rgba(216, 216, 216, 0.77);
+}
+.remodal-wrapper {
+    text-align: center;
+    @include breakpoint(640) {
+        padding: 0;
+    }
+}
+.remodal {
+    text-align: initial;
+    width: auto;
+    max-width: 100%;
+    display: inline-block;
+    padding-top: 33px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 37px;
+    @include box-shadow(0px 0px 15px 0px rgba(0,0,0,0.24));
+    @include breakpoint_min(641){
+        max-width: 100% !important;
+    }
+    @include breakpoint(640){
+        padding-top: 72px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 0;
+    }
+    @include breakpoint(479){
+        padding-top: 72px * 0.66;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 37px * 0.66;
+    }
+}
+.remodal-close {
+    top: 21px;
+    left: auto;
+    right: 26px;
+    color: #333333;
+    width: auto;
+    height: auto;
+    @include breakpoint(640){
+        top: 0;
+        left: 0;
+        right: auto;
+        padding-top: 19px;
+        padding-left: 21px;
+        padding-right: 21px;
+        padding-bottom: 19px;
+        font-size: 22px;
+        letter-spacing: 0.1em;
+    }
+    @include breakpoint(479){
+        padding-top: 19px * 0.66;
+        padding-left: 21px * 0.66;
+        padding-right: 21px * 0.66;
+        padding-bottom: 19px * 0.66;
+        font-size: 22px * 0.66;
+    }
+    &:before {
+        background-image: url("/images/smart/icons/svg/close.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        vertical-align: -4px;
+        position: static;
+        width: 28px * 0.66;
+        height: 28px * 0.66;
+        content: "";
+        @include breakpoint(640){
+            vertical-align: -5px;
+            margin-right: 19px;
+            width: 28px;
+            height: 28px;
+        }
+        @include breakpoint(479){
+            vertical-align: -4px;
+            margin-right: 19px * 0.66;
+            width: 28px * 0.66;
+            height: 28px * 0.66;
+        }
+    }
+    &:after {
+        @include breakpoint(640){
+            content: "Закрыть";
+        }
+    }
+}
+/*modal-order-form*/
+.modal-order-form {
+    max-width: 820px;
+    .hgroup {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 1.5;
+        @include breakpoint(960) {
+            font-size: 20px;
+        }
+        @include breakpoint(479) {
+            font-size: 20px * 0.66;
+        }
+        h2 {
+            font-weight: 700;
+            margin-top: 0;
+            font-size: 26px;
+            line-height: 1.14;
+            margin-bottom: 18px;
+            @include breakpoint(960) {
+                font-weight: 400;
+                font-size: 35px;
+                margin-bottom: 15px;
+            }
+            @include breakpoint(479) {
+                font-size: 35px * 0.66;
+                margin-bottom: 15px * 0.66;
+            }
+        }
+    }
+    .form {
+        .f-row {
+            &.f-row-flex {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+            }
+            + .f-row {
+                margin-top: 24px;
+                @include breakpoint(960) {
+                    margin-top: 34px;
+                }
+                @include breakpoint(479) {
+                    margin-top: 34px * 0.66;
+                }
+            }
+            input {
+                &[type="text"],
+                &[type="tel"],
+                &[type="email"] {
+                    width: 100%;
+                }
+            }
+            select {
+                width: 100%;
+            }
+        }
+        .f-label {
+            display: block;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #636262;
+            margin-bottom: 5px;
+            @include breakpoint(960){
+                font-size: 18px;
+                margin-bottom: 11px;
+            }
+            @include breakpoint(479){
+                font-size: 18px * 0.66;
+                margin-bottom: 11px * 0.66;
+            }
+        }
+        .main-form-fields {
+            margin-top: 24px;
+            @include breakpoint(960){
+                flex-wrap: wrap;
+                margin-top: 40px;
+            }
+            @include breakpoint(479){
+                margin-top: 40px * 0.66;
+            }
+            .f-col {
+                width: 240px;
+                @include breakpoint(960){
+                    width: 100%;
+                }
+                + .f-col {
+                    @include breakpoint(960) {
+                        margin-top: 34px;
+                    }
+                    @include breakpoint(479) {
+                        margin-top: 34px * 0.66;
+                    }
+                }
+            }
+        }
+        .attach-files {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            .f-label {
+                width: 100%;
+            }
+            .btn-attach {
+                padding-left: 17px;
+                padding-right: 34px;
+            }
+            .attachments {
+                font-weight: 300;
+                @include breakpoint(960) {
+                    width: 100%;
+                    margin-top: 18px;
+                    font-size: 18px;
+                }
+                @include breakpoint(479) {
+                    margin-top: 18px * 0.66;
+                    font-size: 18px * 0.66;
+                }
+                span {
+                    display: inline-block;
+                    margin-left: 20px;
+                    @include breakpoint(960) {
+                        display: block;
+                        margin-left: 0;
+                        margin-top: 11px;
+                    }
+                    @include breakpoint(479) {
+                        margin-top: 11px * 0.66;
+                    }
+                    a {
+                        font-weight: 100;
+                        color: #949494;
+                        font-size: 120%;
+                        vertical-align: -1px;
+                        &:hover {
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+            #tooltip_attach_files {
+                display: none;
+            }
+        }
+        .selected-items {
+            margin-top: 30px;
+            .selected-item {
+                padding-top: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                margin-left: -30px;
+                margin-right: -30px;
+                background-color: #fcfcfc;
+                @include breakpoint(640){
+                    padding-right: 20px;
+                    padding-left: 20px;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                }
+                @include breakpoint(479){
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    margin-left: -15px;
+                    margin-right: -15px;
+                }
+                &:not(:last-child){
+                    .btn-add-new {
+                        display: none;
+                    }
+                }
+                + .selected-item {
+                    margin-top: 20px;
+                }
+                .flex {
+                    display: flex;
+                    align-items: flex-start;
+                    @include breakpoint(960){
+                        flex-direction: column;
+                    }
+                }
+                .select-type {
+                    width: 100%;
+                    max-width: 350px;
+                    @include breakpoint(960){
+                        max-width: 100%;
+                    }
+                    .f-row-flex {
+                        @include breakpoint(960){
+                            flex-direction: column;
+                        }
+                    }
+                    .item-type {
+                        width: 250px;
+                        @include breakpoint(960){
+                            width: 100%;
+                        }
+                    }
+                    .item-color {
+                        width: 190px;
+                        @include breakpoint(960){
+                            width: 100%;
+                        }
+                    }
+                    .item-qty {
+                        @include breakpoint(960){
+                            margin-top: 34px;
+                        }
+                        @include breakpoint(479){
+                            margin-top: 34px * 0.66;
+                        }
+                    }
+                }
+                .select-settings {
+                    margin-left: 33px;
+                    position: relative;
+                    @include breakpoint(960){
+                        margin-left: 0;
+                        margin-top: 34px;
+                    }
+                    @include breakpoint(479){
+                        margin-left: 0;
+                        margin-top: 34px * 0.66;
+                    }
+                    .position {
+                        position: relative;
+                        margin-top: 15px;
+                        @include breakpoint(960){
+                            margin-top: 25px;
+                        }
+                        @include breakpoint(479){
+                            margin-top: 25px * 0.66;
+                        }
+                        + .position {
+                            @include breakpoint(960){
+                                margin-top: 55px;
+                            }
+                            @include breakpoint(479){
+                                margin-top: 55px * 0.66;
+                            }
+                            .hint {
+                                top: -78px;
+                            }
+                            + .position {
+                                .hint {
+                                    top: -121px;
+                                }
+                            }
+                        }
+                        input[type="checkbox"] {
+                            &:checked {
+                                ~ .size,
+                                ~ .hint {
+                                    display: block;
+                                }
+                                ~ .hint {
+                                    @include breakpoint(960){
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        .size {
+                            white-space: nowrap;
+                            display: none;
+                            position: absolute;
+                            top: 2px;
+                            left: 160px;
+                            @include breakpoint(960){
+                                position: static;
+                                top: auto;
+                                left: auto;
+                                margin-top: 25px;
+                                padding-left: 3px;
+                            }
+                            @include breakpoint(479){
+                                left: auto;
+                                margin-top: 25px * 0.66;
+                                padding-left: 2px;
+                            }
+                            .radio {
+                                + input[type="radio"] {
+                                    + .radio {
+                                        margin-left: 18px;
+                                    }
+                                }
+                            }
+                        }
+                        .hint {
+                            display: none;
+                            position: absolute;
+                            top: -35px;
+                            left: 160px;
+                            font-size: 14px;
+                            font-weight: 300;
+                            background-color: #fcfcfc;
+                            white-space: nowrap;
+                            a {
+                                color: #636262;
+                                text-decoration: underline;
+                                &:hover {
+                                    color: $orange;
+                                    &:after {
+                                        background-image: url("/images/smart/icons/svg/help-button-h.svg");
+                                    }
+                                }
+                                &:after {
+                                    display: inline-block;
+                                    vertical-align: -4px;
+                                    margin-left: 9px;
+                                    width: 18px;
+                                    height: 18px;
+                                    background-size: contain;
+                                    background-image: url("/images/smart/icons/svg/help-button.svg");
+                                    background-repeat: no-repeat;
+                                    content: "";
+                                }
+                            }
+                        }
+                    }
+                }
+                .btn-add-new {
+                    margin-top: 30px;
+                    padding-left: 15px;
+                    padding-right: 25px;
+                    background-color: $main-background;
+                    @include breakpoint(960){
+                        margin-top: 70px;
+                    }
+                    @include breakpoint(640){
+                        width: 100%;
+                    }
+                    @include breakpoint(479){
+                        margin-top: 70px * 0.66;
+                    }
+                    @include breakpoint(360){
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                    &:hover {
+                        &:before {
+                            background-image: url(/images/smart/icons/svg/plus-h.svg);
+                        }
+                    }
+                    &:before {
+                        display: inline-block;
+                        vertical-align: -3px;
+                        width: 17px;
+                        height: 17px;
+                        margin-right: 13px;
+                        background-image: url(/images/smart/icons/svg/plus.svg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        content: "";
+                        @include breakpoint(960){
+                            width: 28px;
+                            height: 28px;
+                            margin-right: 21px;
+                            vertical-align: -6px;
+                        }
+                        @include breakpoint(479){
+                            width: 28px * 0.66;
+                            height: 28px * 0.66;
+                            margin-right: 21px * 0.66;
+                            vertical-align: -4px;
+                        }
+                    }
+                }
+            }
+        }
+        .f-comment {
+            margin-top: 24px;
+            .toggle {
+                cursor: pointer;
+                font-weight: 300;
+                font-size: 16px;
+                border-bottom: 1px dotted;
+                @include breakpoint(960){
+                    font-size: 20px;
+                }
+                @include breakpoint(479){
+                    font-size: 20px * 0.66;
+                }
+                &:hover {
+                    color: $orange;
+                }
+                &.toggle-on {
+                    &:before {
+                        content: "Скрыть комментарий";
+                    }
+                    ~ br,
+                    ~ textarea {
+                        display: block;
+                    }
+                    &.permanent {
+                        &:before {
+                            content: "Комментарий";
+                        }
+                    }
+                }
+                &:before {
+                    content: "Добавить комментарий";
+                }
+            }
+            br,
+            textarea {
+                display: none;
+            }
+            textarea {
+                width: 100%;
+                height: 160px;
+                max-width: 520px;
+                margin-top: 9px;
+                @include breakpoint(960){
+                    margin-top: 16px;
+                    height: 350px;
+                }
+                @include breakpoint(479){
+                    margin-top: 16px * 0.66;
+                    height: 350px * 0.66;
+                }
+            }
+        }
+        .f-submit {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 45px;
+            @include breakpoint(640){
+                flex-direction: column;
+            }
+            .btn-warning {
+                padding-left: 43px;
+                padding-right: 43px;
+                @include breakpoint(640){
+                    width: 100%;
+                }
+            }
+            .btn-link {
+                font-weight: 300;
+                @include breakpoint(640){
+                    width: 100%;
+                    margin-top: 14px;
+                }
+                @include breakpoint(479){
+                    margin-top: 14px * 0.66;
+                }
+            }
+        }
+    }
+}
+.modal-order-form-result {
+    width: 630px;
+    max-width: 100%;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.4375;
+    padding-top: 19px;
+    padding-bottom: 9px;
+    @include breakpoint(960){
+        font-size: 20px;
+    }
+    @include breakpoint(479){
+        font-size: 20px * 0.66;
+        padding-top: 19px * 0.66;
+        padding-bottom: 9px * 0.66;
+    }
+    hgroup {
+        position: relative;
+        padding-left: 135px;
+        padding-top: 35px;
+        font-weight: 300;
+        color: #505050;
+        margin-bottom: 27px;
+        @include breakpoint(479){
+            padding-top: 14px;
+            padding-left: 76px;
+            margin-bottom: 27px * 0.66;
+        }
+        @include breakpoint(390){
+            padding-left: 65px;
+        }
+        &:before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 16px;
+            width: 83px;
+            height: 102px;
+            background-image: url("/images/smart/icons/thanks-for.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: "";
+            @include breakpoint(479){
+                width: 48px;
+                height: 59px;
+                left: 1px;
+                top: 13px;
+            }
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: $orange;
+            margin-top: 0;
+            line-height: 1;
+            margin-bottom: 0.45em;
+            @include breakpoint(479){
+                font-size: 30px;
+            }
+            @include breakpoint(390){
+                font-size: 24px;
+            }
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 0.45em;
+            margin-bottom: 0;
+            @include breakpoint(479){
+                font-size: 20px;
+            }
+        }
+    }
+    .f-submit {
+        margin-top: 58px;
+        display: flex;
+        justify-content: space-between;
+        @include breakpoint(960){
+            flex-direction: column;
+            justify-content: center;
+        }
+        @include breakpoint(479){
+            margin-top: 58px * 0.66;
+        }
+        .btn-primary {
+            width: 300px;
+            max-width: 100%;
+            @include breakpoint(960){
+                width: 100%;
+                margin-bottom: 14px;
+            }
+            @include breakpoint(479){
+                margin-bottom: 14px * 0.66;
+            }
+        }
+    }
+}

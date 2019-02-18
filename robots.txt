@@ -1,0 +1,32 @@
+User-Agent: *
+
+Disallow: /admin/
+Disallow: /backup/
+Disallow: /cgi-bin/
+Disallow: /include/
+Disallow: /module/
+Disallow: /temp/
+Disallow: /tpl/
+
+Disallow: /admin.php
+Disallow: /login.php
+Disallow: /dumper.php
+Disallow: /test.php
+Disallow: /sinfo.php
+Disallow: /js/smart/extra.js
+Disallow: /js/smart/extra.min.js
+
+Disallow: /*filter
+Disallow: /*gclid
+Disallow: /*?utm
+Disallow: /*?sort
+Disallow: /*?ajax
+Disallow: /*&ajax
+Disallow: /*?action
+Disallow: /*?color=
+Disallow: /*BPCTRY=
+Disallow: /*click_id
+Disallow: *?typeid=
+
+Host: maikoff.com.ua
+Sitemap: https://maikoff.com.ua/sitemap.xml

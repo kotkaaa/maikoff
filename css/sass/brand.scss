@@ -1,0 +1,63 @@
+@import "common";
+@import "content-top";
+@import "selected";
+@import "product-grid";
+@import "pagination";
+@import "top-feature";
+@import "seo-text";
+@import "toolbar";
+@import "filter-buttons";
+
+.content-box {
+    padding-top: 35px;
+    .flex {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        @include breakpoint(960) {
+            display: block;
+        }
+    }
+    .right-box {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 20px;
+        @include breakpoint(960) {
+            width: auto;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .left-box {
+        width: 275px;
+        min-width: 275px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+        @include breakpoint(960) {
+            display: none;
+        }
+    }
+}
+
+.content-top {
+    .content-top-wrap {
+        .top-info {
+            @include breakpoint (960) {
+                display: none;
+            }
+        }
+        img {
+            margin-top: 15px;
+            padding-bottom: 15px;
+            @include breakpoint (960) {
+                float: none;
+                padding: 0;
+            }
+        } 
+        @include breakpoint (960) {
+            display: block !important;
+        }
+    }
+}

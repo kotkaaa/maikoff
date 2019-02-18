@@ -1,0 +1,28 @@
+.swiper-scrollbar {
+    background-color: transparent !important;
+    .swiper-scrollbar-drag {
+        background-color: rgba(0,0,0,0.15) !important;
+    }
+}
+.btn-nx,
+.btn-pv {
+    display: block !important;
+    width: 50px !important;
+    height: 21px !important;
+    cursor: pointer !important;
+    background-image: url(/images/smart/sm-arrow-next.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    @include breakpoint (479) {
+        width: 36px !important;
+        height: 17px !important;
+    }
+    &.swiper-button-disabled {
+        @include opacity(0 !important);
+        height: 0px !important;
+        margin-bottom: 0px !important;
+    }
+}
+.btn-pv {
+    @include transform(rotate(-180deg) !important);
+}

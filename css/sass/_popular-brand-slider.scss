@@ -1,0 +1,105 @@
+.popular-brand {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-color: $white;
+    @include breakpoint(479) {
+        padding-top: 33px;
+        padding-bottom: 46px;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: 1.25;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 22px;
+        letter-spacing: 0.7px;
+        @include breakpoint (960) {
+            font-size: 34px;
+        }
+        @include breakpoint (479) {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+    }
+    span {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        font-size: 19px;
+        line-height: 1.4;
+        font-weight: 300;
+        text-align: center;
+        @include breakpoint (960) {
+            font-size: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 20px;
+        }
+        @include breakpoint (479) {
+            margin-bottom: 18px;
+            font-size: 13px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .swiper-container {
+        max-width: 944px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 24px;
+        @include breakpoint(944){
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        @include breakpoint(479){
+            padding-top: 0;
+            margin-left: 14px;
+            margin-right: 14px;
+        }
+    }
+    .swiper-wrapper {
+        .swiper-slide {
+            display: inline-block;
+            width: auto !important;
+            &:last-child {
+                margin-right: 0 !important;
+            }
+            img {
+                vertical-align: top;
+            }
+        }
+    }
+    .swiper-scrollbar {
+        top: 0;
+        bottom: auto;
+        left: 0;
+        width: 100%;
+    }
+    .arrows {
+        position: relative;
+        width: 150px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        @include breakpoint(479) {
+            width: 90px;
+        }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: relative;
+        top: 0;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        @include breakpoint (479) {
+            margin-bottom: 20px;
+        }
+    }
+    .swiper-button-next {
+        right: 0;
+    }
+    .swiper-button-prev {
+        left: 0;
+    }
+}

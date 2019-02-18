@@ -1,0 +1,59 @@
+/*
+WebLife CMS
+Created on 25.07.2018, 16:01:39
+Developed by http://weblife.ua/
+*//* 
+    Created on : 25.07.2018, 16:01:39
+    Author     : user5
+*/
+
+.static-page {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    .left-box {
+        width: 250px;
+        float: left;
+        padding-top: 20px;
+        @include breakpoint (960) {
+            display: none;
+        }
+    }
+    .right-box {
+        margin-left: 300px;
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: $thin;
+        color: #484848;
+        @include breakpoint (960) {
+            font-size: 22px;
+            margin-left: 0;
+        }
+        @include breakpoint (479) {
+            font-size: 15px;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 42px;
+            font-weight: 700;
+            color: #333;
+            line-height: 1.05;
+            @include breakpoint (960) {
+                font-size: 38px;
+            }
+            @include breakpoint (479) {
+                font-size: 25px;
+            }
+        }
+        a {
+            color: $orange;
+        }
+        .product-table {
+            overflow: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            > table {
+                min-width: 820px;
+            }
+        }
+    }
+}

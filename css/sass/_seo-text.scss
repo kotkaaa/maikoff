@@ -1,0 +1,41 @@
+.seo-container {
+    padding-top: 45px;
+    padding-bottom: 65px;
+    @include breakpoint(479){
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .container {
+        overflow: auto;
+    }
+    .content {
+        min-width: 700px;
+        column-count: 2;
+        column-gap: 60px;
+        color: #707070;
+        font-weight: $thin;
+        font-size: 15px;
+        line-height: 1.86;
+        @include breakpoint (479) {
+            font-size: 11px;
+        }
+        h1 {
+            color: $dark-grey;
+            column-span: all;
+        }
+        h2 {
+            font-size: 15px;
+            color: $dark-grey;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0;
+            @include breakpoint(479){
+                font-size: 10px;
+                font-weight: 900;
+            }
+        }
+        a {
+            color: $orange; 
+        }
+    }
+}

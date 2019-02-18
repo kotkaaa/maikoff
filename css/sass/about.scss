@@ -1,0 +1,117 @@
+@import "common";
+@import "features";
+
+.wide-hr {
+    display: none;
+}
+/*TOP BANNER*/
+.top-banner {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    background-image: url(/images/tmp/banners/banner-1.jpg);
+    min-height: 370px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include breakpoint (960) {
+        background-position: center center;
+        min-height: 240px;
+    }
+    h2 {
+        color: #fff;
+        font-size: 50px;
+        line-height: 1.18;
+        font-weight: $bold;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 12px;
+        @include breakpoint (960) {
+            font-size: 36px;
+        }
+        @include breakpoint (479) {
+            font-size: 28px;
+        }
+        @include breakpoint (359) {
+            font-size: 24px;
+        }
+    }
+    p {
+        color: #fff;
+        font-size: 19px;
+        line-height: 1.7;
+        font-weight: $thin;
+        text-align: center;
+        margin: 0;
+        @include breakpoint (960) {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        @include breakpoint (479) {
+            font-weight: 400;
+        }
+        @include breakpoint (359) {
+            font-size: 14px;
+        }
+    }
+}   
+/********************************************/
+
+.order-print {
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: $bold;
+    margin: 0;
+    letter-spacing: 1px;
+    padding-bottom: 40px;
+    @include breakpoint (960) {
+        font-size: 34px;
+        padding-bottom: 0;
+    }
+    @include breakpoint (479) {
+        font-size: 23px;
+    }
+}
+.about-us-info {
+    max-width: 780px;
+    margin: auto;
+    padding-bottom: 60px;
+    padding-left: 14px;
+    padding-right: 14px;
+    @include breakpoint (960) {
+        padding-bottom: 75px;
+    }
+    @include breakpoint (479) {
+        padding-bottom: 50px;
+    }
+    h3 {
+        color: $black;
+        font-size: 26px;
+        line-height: 1.53;
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 1px;
+        @include breakpoint (960) {
+            font-weight: $bold;
+            font-size: 34px;
+        }
+        @include breakpoint (479) {
+            font-size: 23px;
+            margin-top: 0;
+        }
+    }
+    p {
+        color: #484848;
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: $thin;
+        @include breakpoint (960) {
+            font-size: 20px;
+            text-align: center;
+        }
+        @include breakpoint (479) {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,375 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27.11.2017, 16:40:21
+    Author     : user5
+*/
+
+.btn {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position:relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-style: solid;
+    border-width: 1px;
+    letter-spacing: 0.1em;
+    @include border-radius(3px);
+    @include transition(0.1s ease-in-out);
+    &:active {
+        @include transform(scale(0.98));
+    }
+    &:disabled,
+    &.disabled {
+        cursor: default;
+        pointer-events: none;
+        @include opacity(0.6);
+    }
+    &.btn-default {
+        color: #333333;
+        border-color: #8b8b8b;
+        background-color: $main-background;
+        &:hover {
+            color: #eb490f;
+            border-color: #eb490f;
+        }
+        &:active {
+            color: #ec5b27;
+            background-color: #fff1ec;
+        }
+    }
+    &.btn-link {
+        border-color: transparent !important;
+        background-color: transparent !important;
+        color: #6e6e6e;
+        &:hover {
+            color: #eb490f;
+        }
+    }
+    &.btn-primary {
+        @extend .btn-default;
+        &:not(:hover){
+            border-color: #d3d3d3;
+        }
+    }
+    &.btn-success {
+        background-color: #4daeff;
+        color: $white;
+        border-color: #5e8ce4;
+        &:hover {
+            background-color: #5e8ce4;
+        }
+        &:active {
+            color: #4daeff;
+            text-shadow: 2px 2px 2px #5e8ce4;
+        }
+    }
+    &.btn-warning {
+        color: $white;
+        border-color: #eb490f;
+        background-color: #eb490f;
+        &:hover {
+            background-color: #d33800;
+            border-color: #d33800;
+        }
+        &:active {
+            border-color: #eb490f;
+            background-color: #eb490f;
+        }
+    }
+    &.btn-danger {
+    }
+    &.btn-xs {
+    }
+    &.btn-s {
+    }
+    &.btn-m {
+        height: 39px;
+        line-height: 37px;
+        @include breakpoint(960){
+            height: 54px;
+            line-height: 52px;
+            font-size: 22px;
+        }
+        @include breakpoint(479){
+            height: (54px * 0.66);
+            line-height: (52px * 0.66);
+            font-size: 22px * 0.66;
+        }
+    }
+    &.btn-l {
+        height: 47px;
+        line-height: 45px;
+        font-size: 16px;
+        font-weight: 300;
+        @include breakpoint(960){
+            height: 55px;
+            line-height: 53px;
+            font-size: 22px;
+        }
+        @include breakpoint(479){
+            height: (55px * 0.66);
+            line-height: (53px * 0.66);
+            font-size: (22px * 0.66);
+        }
+    }
+    &.btn-xl {
+        height: 54px;
+        line-height: 52px;
+        font-size: 16px;
+        font-weight: 500;
+        @include breakpoint(960){
+            height: 65px;
+            line-height: 63px;
+            font-size: 22px;
+        }
+        @include breakpoint(479){
+            height: (65px * 0.66);
+            line-height: (63px * 0.66);
+            font-size: (22px * 0.66);
+        }
+        &.lg {
+            font-size: 22px;
+            @include breakpoint(479){
+                font-size: (22px * 0.66);
+            }
+        }
+    }
+    &.btn-xxl {
+        height: 60px;
+        line-height: 58px;
+        font-size: 22px;
+        font-weight: 700;
+        @include breakpoint(479){
+            height: (60px * 0.66);
+            line-height: (58px * 0.66);
+            font-size: (22px * 0.66);
+        }
+        &.sm {
+            font-size: 16px;
+            @include breakpoint(479){
+                font-size: (16px * 0.66);
+            }
+        }
+        &.lg {
+            letter-spacing: 0;
+            font-size: 25px;
+            @include breakpoint(479){
+                font-size: (25px * 0.66);
+            }
+        }
+    }
+}
+
+.spin-edit {
+    width: 133px;
+    display: inline-block;
+    position: relative;
+    @include breakpoint(960) {
+        width: 190px;
+    }
+    @include breakpoint(479) {
+        width: 190px * 0.66;
+    }
+    &.xl {
+        .spin-btn,
+        input[type="text"] {
+            height: 45px;
+            @include breakpoint(960) {
+                height: 55px;
+            }
+            @include breakpoint(479) {
+                height: 55px * 0.66;
+            }
+        }
+    }
+    input[type="text"] {
+        pointer-events: none;
+        cursor: default;
+        text-align: center;
+        font-size: 18px;
+        color: #636363;
+        font-weight: 300;
+        width: 100%;
+        height: 39px;
+        @include breakpoint(960) {
+            height: 54px;
+            font-size: 32px;
+        }
+        @include breakpoint(479) {
+            height: 54px * 0.66;
+            font-size: 18px;
+        }
+    }
+    .spin-btn {
+        position: absolute;
+        top: 0;
+        width: 39px;
+        height: 39px;
+        background-color: transparent;
+        border-color: transparent;
+        border-width: 0px;
+        text-align: center;
+        font-weight: 100;
+        @include breakpoint(960) {
+            width: 54px;
+            height: 54px;
+        }
+        @include breakpoint(479) {
+            width: 54px * 0.66;
+            height: 54px * 0.66;
+        }
+        &:active {
+            @include transform(scale(0.85));
+        }
+        &:hover {
+            color: $orange;
+        }
+        &:before {
+            display: inline-block;
+            vertical-align: bottom;
+            width: 17px;
+            height: 20px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            content: "";
+            @include breakpoint(960) {
+                width: 28px;
+                height: 28px;
+            }
+            @include breakpoint(479) {
+                width: 28px * 0.66;
+                height: 28px * 0.66;
+            }
+        }
+    }
+    .spin-del,
+    .spin-down {
+        left: 0;
+    }
+    .spin-down {
+        &:before {
+            background-image: url("/images/smart/icons/svg/minus.svg");
+        }
+        &:hover {
+            &:before {
+                background-image: url("/images/smart/icons/svg/minus-h.svg");
+            }
+        }
+    }
+    .spin-up {
+        right: 0;
+        &:before {
+            background-image: url("/images/smart/icons/svg/plus.svg");
+        }
+        &:hover {
+            &:before {
+                background-image: url("/images/smart/icons/svg/plus-h.svg");
+            }
+        }
+    }
+    .spin-del {
+        &:active {
+            @include transform(scale(0.96));
+        }
+        &:before {
+            background-image: url("/images/smart/icons/svg/trash.svg");
+        }
+        &:hover {
+            &:before {
+                background-image: url("/images/smart/icons/svg/trash-h.svg");
+            }
+        }
+    }
+}
+
+.btn-attach {
+    position: relative;
+    &:hover {
+        .pin {
+            background-image: url("/images/smart/icons/svg/clip-h.svg");
+        }
+    }
+    &.progress {
+        border-color: #e9e9e9;
+        pointer-events: none;
+        &:before,
+        &:after {
+            @include animation(upload-progress 2s linear infinite);
+            content: "";
+        }
+        .pin {
+            vertical-align: -4px;
+            background-image: url("/images/smart/icons/svg/cloud.svg");
+            &:after {
+                display: block;
+                position: absolute;
+                left: 50%;
+                margin-left: -7px;
+                width: 14px;
+                height: 18px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-image: url("/images/smart/icons/svg/arrow.svg");
+                @include animation(upload-arrow 1.2s ease-out infinite);
+                content: "";
+            }
+        }
+    }
+    &:before,
+    &:after {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 8px;
+        background-image: linear-gradient(-45deg, #FFFFFF 25%, #e7eae9 25%, #e7eae9 50%, #FFFFFF 50%, #FFFFFF 75%, #e7eae9 75%, #e7eae9 100%);
+        background-size: 40px 40px;
+        background-repeat: repeat;
+    }
+    &:before {
+        top: 0;
+    }
+    &:after {
+        bottom: 0;
+    }
+    .pin {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        width: 27px;
+        height: 24px;
+        margin-right: 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("/images/smart/icons/svg/clip.svg");
+        background-size: contain;
+        @include breakpoint(479){
+            width: 27px * 0.66;
+            height: 24px * 0.66;
+        }
+    }
+}
+
+@keyframes upload-progress {
+    0% {
+        background-position: 40px 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes upload-arrow {
+    0% {
+        @include transform(translateY(100%));
+    }
+    100% {
+        @include transform(translateY(50%));
+    }
+}

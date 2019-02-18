@@ -1,0 +1,189 @@
+.color-select {
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fff;
+    border: solid 1px #d3d3d3;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: normal;
+    height: 39px;
+    line-height: 37px;
+    outline: none;
+    padding-left: 13px;
+    padding-right: 36px;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: auto;
+    @include border-radius(3px);
+    @include transition(all 0.2s ease-in-out);
+    @include user-select(none);
+    @include breakpoint_min_max(480, 960){
+        font-size: 22px;
+        height: 54px;
+        padding-left: 20px;
+        padding-right: 72px;
+    }
+    &:active,
+    &.open,
+    &:focus {
+        @include box-shadow(2px 2px 3px 0px rgba(0,0,0,0.15));
+    }
+    &.disabled {
+        border-color: #ededed;
+        color: #999;
+        pointer-events: none;
+        &:after {
+            border-color: #cccccc;
+        }
+    }
+    &.wide {
+        width: 100%;
+        .list {
+            left: 0 !important;
+            right: 0 !important;
+        }
+    }
+    &.right {
+        float: right;
+        .list {
+            left: auto;
+            right: 0;
+        }
+    }
+    &.small {
+        font-size: 12px;
+        height: 36px;
+        line-height: 34px;
+        &:after {
+            height: 4px;
+            width: 4px;
+        }
+        .option {
+            line-height: 34px;
+            min-height: 34px;
+        }
+    }
+    &.open {
+        &:after {
+            @include transform(rotate(-180deg));
+        }
+        .list {
+            opacity: 1;
+            pointer-events: auto;
+            @include transform(scale(1) translateY(0));
+        }
+    }
+    &:after {
+        display: block;
+        background-image: url("/images/smart/icons/svg/down-arrow.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 6px;
+        pointer-events: none;
+        position: absolute;
+        right: 13px;
+        top: 50%;
+        margin-top: -3px;
+        @include transition(all 0.15s ease-in-out);
+        content: '';
+        @include breakpoint_min_max(480, 960){
+            width: 20px;
+            height: 12px;
+            right: 26px;
+            margin-top: -6px;
+        }
+    }
+    .list {
+        background-color: #fff;
+        box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+        box-sizing: border-box;
+        margin-top: 1px;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        @include border-radius(0px 3px 3px 0px);
+        @include transform-origin(50% 0);
+        @include transform(scale(0.75) translateY(-21px));
+        @include transition(all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out);
+        z-index: 9;
+        &:hover {
+            .option {
+                &:not(:hover) {
+                    background-color: transparent !important;
+                }
+            }
+        }
+    }
+    .option,
+    .current {
+        display: flex;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .current {
+        height: 100%;
+    }
+    .option {
+        cursor: pointer;
+        font-weight: 400;
+        list-style: none;
+        height: 39px;
+        outline: none;
+        padding-left: 13px;
+        padding-right: 13px;
+        @include transition(all 0.2s);
+        @include breakpoint_min_max(480, 960){
+            height: 54px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &:hover,
+        &.focus,
+        &.selected.focus {
+            background-color: #f6f6f6;
+        }
+        &.selected {
+            font-weight: bold;
+        }
+        &.disabled {
+            background-color: transparent;
+            color: #999;
+            cursor: default;
+        }
+    }
+    .color {
+        display: block;
+        width: 27px;
+        height: 27px;
+        margin-left: -4px;
+        margin-right: 9px;
+        @include box-shadow(0px 0px 0px 1px #ededed);
+        @include border-radius(2px);
+        @include breakpoint_min_max(480, 960){
+            width: 37px;
+            height: 37px;
+            margin-right: 18px;
+        }
+    }
+}
+.no-csspointerevents {
+    .color-select {
+        &.open {
+            .list {
+                display: block;
+            }
+        }
+        .list {
+            display: none;
+        }
+    } 
+}

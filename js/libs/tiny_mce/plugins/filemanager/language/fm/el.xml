@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="ISO-8859-7"?>
+<language-pack>
+	<header>
+		<author>Dimitris Giannitsaros / MediSign SA</author>
+		<version minor="1" major="0" releasedate="2006-08-02" />
+		<description>
+			This is the Greek language pack for the MCFileManager.
+		</description>
+	</header>
+
+	<language code="el" title="Greek" dir="ltr">
+		<group target="common">
+			<item name="exe">ЕкфелЭуймп бсчеЯп</item>
+			<item name="image">БсчеЯп ейкьнбт</item>
+			<item name="archive">УхмрйеумЭнп бсчеЯп</item>
+			<item name="html">БсчеЯп HTML Ю Script</item>
+			<item name="movie">БсчеЯп вЯнфеп</item>
+			<item name="sound">БсчеЯп Ючпх</item>
+			<item name="swf">БсчеЯп Flash</item>
+			<item name="powerpoint">БсчеЯп Powerpoint</item>
+			<item name="document">ёггсбцп</item>
+			<item name="word">БсчеЯп Office</item>
+			<item name="pdf">БсчеЯп Adobe acrobat</item>
+			<item name="excel">БсчеЯп Excel</item>
+			<item name="txt">БсчеЯп кеймЭнпх</item>
+			<item name="xml">БсчеЯп XML</item>
+		</group>
+
+		<group target="frameset">
+			<item name="title">РесйзгзфЮт БсчеЯщн Moxiecode</item>
+		</group>
+
+		<group target="filelist">
+			<item name="title">РесйзгзфЮт БсчеЯщн Moxiecode</item>
+			<item name="filename">јнпмб</item>
+			<item name="size">МЭгеипт</item>
+			<item name="modified">Зм. фспрпрпЯзузт</item>
+			<item name="confirm_cut">ИЭлефе уЯгпхсб нб кЬнефе брпкпрЮ/мефбкЯнзуз фщн ерйлегмЭнщн бсчеЯщн;</item>
+			<item name="confirm_copy">ИЭлефе уЯгпхсб нб кЬнефе бнфйгсбцЮ фщн ерйлегмЭнщн бсчеЯщн;</item>
+			<item name="confirm_paste">ИЭлефе уЯгпхсб нб кЬнефе ерйкьллзуз фщн бсчеЯщн;</item>
+			<item name="confirm_delete">ИЭлефе уЯгпхсб нб увЮуефе фб ерйлегмЭнб бсчеЯб;</item>
+			<item name="confirm_unzip">ИЭлефе уЯгпхсб нб брпухмрйЭуефе фб ерйлегмЭнб бсчеЯб;\nБн фп мЭгеипт фщн бсчеЯщн еЯнбй рплэ мегЬлп, иб рЬсей кЬрпйб юсб.</item>
+			<item name="zip_removed">Фб бкьлпхиб бсчеЯб увЮуфзкбн гйбфЯ ден Юфбн бсчеЯб zip.</item>
+			<item name="createdir">ДзмйпхсгЯб цбкЭлпх</item>
+			<item name="createdoc">ДзмйпхсгЯб бсчеЯпх</item>
+			<item name="refresh">БнбнЭщуз</item>
+			<item name="upload">Upload нЭпх бсчеЯпх</item>
+			<item name="download">Download ерйлегмЭнпх бсчеЯпх</item>
+			<item name="props">Йдйьфзфет бсчеЯпх/цбкЭлпх</item>
+			<item name="cut">БрпкпрЮ ерйлегмЭнщн бсчеЯщн/цбкЭлщн</item>
+			<item name="copy">БнфйгсбцЮ ерйлегмЭнщн бсчеЯщн/цбкЭлщн</item>
+			<item name="paste">Ерйкьллзуз бсчеЯщн/цбкЭлщн</item>
+			<item name="delete">ДйбгсбцЮ ерйлегмЭнщн бсчеЯщн/цбкЭлщн</item>
+			<item name="unzip">БрпухмрЯеуз ерйлегмЭнпх бсчеЯпх</item>
+			<item name="zip">УхмрЯеуз ерйлегмЭнщн бсчеЯщн/цбкЭлщн</item>
+			<item name="imagemanager">БллбгЮ уфпн ДйбчейсйуфЮ Ейкьнщн</item>
+			<item name="dir">ЦЬкелпт</item>
+			<item name="parent_dir">Рбфсйкьт цЬкелпт</item>
+			<item name="toggle_all">БнфйуфспцЮ ьлщн</item>
+			<item name="error_exists">ЛЬипт: Фп бсчеЯп/цЬкелпт {path} хрЬсчей.</item>
+			<item name="error_delete_failed">ЛЬипт: Ден Эчефе бскефЬ дйкбйюмбфб юуфе нб увЮуефе бсчеЯб/цбкЭлпхт.</item>
+			<item name="error_directory_not_empty">ЛЬипт: П цЬкелпт {path} де мрпсеЯ нб увзуфеЯ, ден еЯнбй Ьдейпт.</item>
+		</group>
+
+		<group target="preview">
+			<item name="title">РлзспцпсЯет бсчеЯпх / цбкЭлпх</item>
+			<item name="directory_information">РлзспцпсЯет цбкЭлпх</item>
+			<item name="file_information">РлзспцпсЯет бсчеЯпх</item>
+			<item name="creationdate">Зм. дзмйпхсгЯбт:</item>
+			<item name="modificationdate">Зм. фспрпрпЯзузт:</item>
+			<item name="access">Дйкбйюмбфб:</item>
+			<item name="directory">ЦЬкелпт:</item>
+			<item name="subdirectories">ХрпцЬкелпй:</item>
+			<item name="files">БсчеЯб:</item>
+			<item name="total_file_size">МЭгеипт бсчеЯщн:</item>
+			<item name="filename">јнпмб бсчеЯпх:</item>
+			<item name="file_size">МЭгеипт бсчеЯпх:</item>
+			<item name="file_description">РесйгсбцЮ бсчеЯпх:</item>
+			<item name="preview">Рсперйукьрзуз</item>
+			<item name="no_preview">Рсперйукьрзуз мз дйбиЭуймз.</item>
+			<item name="button_select">ЕрйлпгЮ</item>
+			<item name="button_view">ЕмцЬнйуз</item>
+			<item name="readable">Бнбгнюуймп</item>
+			<item name="not_readable">Мз бнбгнюуймп</item>
+			<item name="writable">ЕггсЬшймп</item>
+			<item name="not_writable">Мз еггсЬшймп</item>
+		</group>
+
+		<group target="fileprops">
+			<item name="title">Йдйьфзфет бсчеЯпх / цбкЭлпх</item>
+			<item name="description">Йдйьфзфет бсчеЯпх / цбкЭлпх</item>
+			<item name="properties_on">Йдйьфзфет уе:</item>
+			<item name="name">јнпмб:</item>
+			<item name="button_save">БрпиЮкехуз</item>
+			<item name="button_cancel">Бкэсщуз</item>
+			<item name="error_exists">ЛЬипт: ХрЬсчей Юдз бсчеЯп/цЬкелпт ме фп Ядйп ьнпмб.</item>
+		</group>
+
+		<group target="createdir">
+			<item name="title">ДзмйпхсгЯб цбкЭлпх</item>
+			<item name="description">Дюуфе ьнпмб гйб фпн цЬкелп рпх иЭлефе нб дзмйпхсгЮуефе.</item>
+			<item name="template">Рсьфхрп:</item>
+			<item name="select_template">-- ЕрйлЭофе рсьфхрп --</item>
+			<item name="directory_name">јнпмб цбкЭлпх:</item>
+			<item name="create_in">ДзмйпхсгЯб уфп:</item>
+			<item name="button_create">ДзмйпхсгЯб</item>
+			<item name="button_cancel">Бкэсщуз</item>
+			<item name="error_missing_name">ЛЬипт: РсЭрей нб дюуефе ьнпмб.</item>
+			<item name="error_invalid_template_selection">ЛЬипт: РсЭрей нб ерйлЭоефе рсьфхрп.</item>
+			<item name="error_template_not_found">ЛЬипт: Фп ерйлЭгмЭнп рсьфхрп де всЭизке.</item>
+			<item name="error_invalid_name">ЛЬипт: Фп ьнпмб фпх цбкЭлпх ден еЯнбй брпдекфь.\\nРесйлбмвЬней Ькхспхт чбсбкфЮсет ьрщт: :;</item>
+			<item name="error_exists">ЛЬипт: ХрЬсчей цЬкелпт ме бхфь фп ьнпмб.</item>
+		</group>
+
+		<group target="createdoc">
+			<item name="title">ДзмйпхсгЯб бсчеЯпх</item>
+			<item name="description">Ухмрлзсюуфе фз цьсмб гйб нб дзмйпхсгЮуефе Энб нЭп Эггсбцп брь рсьфхрп.</item>
+			<item name="template">Рсьфхрп:</item>
+			<item name="select_template">-- ЕрйлЭофе рсьфхрп--</item>
+			<item name="required_filename">РсЭрей нб дюуефе ьнпмб.</item>
+			<item name="filename">јнпмб:</item>
+			<item name="create_in">ДзмйпхсгЯб уфп:</item>
+			<item name="button_create">ДзмйпхсгЯб</item>
+			<item name="button_cancel">Бкэсщуз</item>
+			<item name="error_missing_document_name">ЛЬипт: РсЭрей нб дюуефе ьнпмб.</item>
+			<item name="error_missing_template_selection">ЛЬипт: РсЭрей нб ерйлЭоефе рсьфхрп.</item>
+			<item name="error_missing_template">ЛЬипт: Фп ерйлЭгмЭнп рсьфхрп де всЭизке.</item>
+			<item name="error_invalid_file_name">ЛЬипт: Фп ьнпмб фпх бсчеЯпх ден еЯнбй брпдекфь.\\nРесйлбмвЬней Ькхспхт чбсбкфЮсет ьрщт: ;.</item>
+			<item name="error_exists">ЛЬипт: ХрЬсчей бсчеЯп ме бхфь фп ьнпмб.</item>
+		</group>
+
+		<group target="upload">
+			<item name="title">Upload</item>
+			<item name="description">ЧсзуймпрпйеЯуфе фз цьсмб гйб нб кЬнефе upload бсчеЯщн.</item>
+			<item name="upload_in">Upload уфп:</item>
+			<item name="valid_extensions">ЕрйфсерфЭт ерекфЬуейт:</item>
+			<item name="max_upload_size">МЭгйуфп мЭгеипт:</item>
+			<item name="file_to_upload">БсчеЯп гйб upload:</item>
+			<item name="as_file_name">Ме ьнпмб:</item>
+			<item name="required_filename">РсЭрей нб дюуефе фп ьнпмб фпх бсчеЯпх рпх иб кЬнефе upload.</item>
+			<item name="button_upload">Upload</item>
+			<item name="button_add_upload">Кй Ьллп бсчеЯп</item>
+			<item name="button_cancel">Бкэсщуз</item>
+			<item name="error_exists">ЛЬипт: Фп бсчеЯп хрЬсчей Юдз.</item>
+			<item name="error_to_large">ЛЬипт: Фп бсчеЯп еЯнбй рплэ мегЬлп.</item>
+			<item name="remove">Remove</item>
+		</group>
+
+		<group target="unzip">
+			<item name="title">Ерйукьрзуз брпухмрЯеузт</item>
+			<item name="description">Мйб ерйукьрзуз фщн бсчеЯщн zip рпх ерйлЭобфе.</item>
+			<item name="zipfile_name">јнпмб zip:</item>
+			<item name="current_folder">ФсЭчщн цЬкелпт:</item>
+			<item name="overwrite_files">ЕрйкЬлхшз бсчеЯщн:</item>
+			<item name="name">јнпмб</item>
+			<item name="size">МЭгеипт</item>
+			<item name="csize">CSize</item>
+			<item name="exists">ХрЬсчей</item>
+			<item name="status">КбфЬуфбуз</item>
+			<item name="created">ДзмйпхсгЮизке</item>
+			<item name="button_unzip">БрпухмрЯеуз</item>
+			<item name="button_cancel">Бкэсщуз</item>
+			<item name="button_back">РЯущ</item>
+			<item name="button_close">КлеЯуймп</item>
+			<item name="Accepted">БрпдечиеЯт</item>
+			<item name="Denied">Мз брпдечиеЯт</item>
+			<item name="Passed">ЕрйфхчзмЭнп</item>
+			<item name="Failed">БрпфхчзмЭнп</item>
+			<item name="Yes">Нбй</item>
+			<item name="No">јчй</item>
+		</group>
+
+		<group target="zip">
+			<item name="title">ДзмйпхсгЯб zip</item>
+			<item name="description">Дюуфе фп ьнпмб фпх бсчеЯпх zip рпх иЭлефе нб дзмйпхсгЮуефе.</item>
+			<item name="created_in">Фп zip иб дзмйпхсгзиеЯ уфп:</item>
+			<item name="name">јнпмб:</item>
+			<item name="required_filename">РсЭрей нб дюуефе ьнпмб.</item>
+			<item name="button_create">ДзмйпхсгЯб</item>
+			<item name="button_cancel">Бкэсщуз</item>
+		</group>
+	</language>
+</language-pack>

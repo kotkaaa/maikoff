@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language-pack>
+	<header>
+		<author>Moxiecode Systems AB</author>
+		<version minor="1" major="0" releasedate="2005-09-27" />
+		<description>
+			This is the japanese unicode language pack for the MCImageManager.
+		</description>
+	</header>
+
+	<language code="ja_utf-8" title="Japanese" dir="ltr">
+		<group target="common">
+			<item name="filemanager">гѓ•г‚Ўг‚¤гѓ«з®Ўзђ†гЃ«иЎЊгЃЏ</item>
+			<item name="createdir">гѓ•г‚©гѓ«гѓЂж–°и¦ЏдЅњж€ђ</item>
+			<item name="refresh">ж›ґж–°</item>
+			<item name="upload">г‚¤гѓЎгѓјг‚ёг‚’г‚ўгѓѓгѓ—гѓ­гѓјгѓ‰</item>
+			<item name="error_no_access">г‚Ёгѓ©гѓјпјљг‚ўг‚Їг‚»г‚№жЁ©е€©гЃЊгЃ‚г‚ЉгЃѕгЃ›г‚“</item>
+			<item name="error_delete_failed">г‚Ёгѓ©гѓјпјљг‚ўг‚Їг‚»г‚№жЁ©е€©гЃЊгЃ‚г‚ЉгЃѕгЃ›г‚“</item>
+		</group>
+
+		<group target="createdir">
+			<item name="title">гѓ•г‚©гѓ«гѓЂж–°и¦ЏдЅњж€ђ</item>
+			<item name="description">гѓ•г‚©гѓ«гѓЂеђЌг‚’иЁе…ҐгЃ—гЃ¦гЃЏгЃ гЃ•гЃ„</item>
+			<item name="template">гѓ†гѓігѓ—гѓ¬гѓјгѓ€:</item>
+			<item name="select_template">-- гѓ†гѓігѓ—гѓ¬гѓјгѓ€г‚’йЃёжЉћ --</item>
+			<item name="directory_name">гѓ•г‚©гѓ«гѓЂеђЌ:</item>
+			<item name="create_in">дЅњж€ђе…€:</item>
+			<item name="button_create">дЅњж€ђ</item>
+			<item name="button_cancel">г‚­гѓЈгѓіг‚»гѓ«</item>
+			<item name="error_missing_name">г‚Ёгѓ©гѓјпјљеђЌе‰Ќг‚’иЁ­е®љгЃ—гЃ¦гЃ„гЃЄгЃ„</item>
+			<item name="error_select_template">г‚Ёгѓ©гѓј: гѓ•г‚©гѓ«гѓЂгЃ®гѓ†гѓігѓ—гѓ¬гѓјгѓ€г‚’йЃёжЉћгЃ™г‚‹еї…и¦ЃгЃЊгЃ‚г‚‹</item>
+			<item name="error_template_missing">г‚Ёгѓ©гѓј: йЃёжЉћгЃ•г‚ЊгЃџгѓ†гѓігѓ—гѓ¬гѓјгѓ€гЃЊгЃЄгЃ„гЂ‚</item>
+			<item name="error_invalid_name">г‚Ёгѓ©гѓјпјљгЃќгЃ®гѓ•г‚©гѓ«гѓЂеђЌгЃЊз„ЎеЉ№</item>
+			<item name="error_exists">г‚Ёгѓ©гѓјпјљгЃќгЃ®гѓ•г‚©гѓ«гѓЂгЃЊгЃ™гЃ§гЃ«е­ењЁгЃ™г‚‹</item>
+		</group>
+
+		<group target="upload">
+			<item name="title">г‚ўгѓѓгѓ—гѓ­гѓјгѓ‰</item>
+			<item name="description">гѓ•г‚Ўг‚¤гѓ«г‚’г‚ўгѓѓгѓ—гѓ­гѓјгѓ‰гЃ®гѓ•г‚©гѓ«гѓ </item>
+			<item name="upload_in">г‚ўгѓѓгѓ—гѓ­гѓјгѓ‰е…€:</item>
+			<item name="valid_extensions">жњ‰еЉ№ж‹ЎејµеЅўејЏ:</item>
+			<item name="max_upload_size">жњЂе¤§гЃ®г‚µг‚¤г‚є:</item>
+			<item name="file_to_upload">г‚ўгѓѓгѓ—гѓ­гѓјгѓ‰гЃ™г‚‹гѓ•г‚Ўг‚¤гѓ«еђЌ:</item>
+			<item name="as_file_name">гѓ•г‚Ўг‚¤гѓ«еђЌ:</item>
+			<item name="required_filename">гѓ•г‚Ўг‚¤гѓ«еђЌгЃЊеї…и¦Ѓ</item>
+			<item name="button_upload">г‚ўгѓѓгѓ—гѓ­гѓјгѓ‰</item>
+			<item name="button_add_upload">г‚ўгѓѓгѓ—гѓ­гѓјгѓ‰г‚’иїЅеЉ </item>
+			<item name="button_cancel">г‚­гѓЈгѓіг‚»гѓ«</item>
+			<item name="error_exists">г‚Ёгѓ©гѓјпјљгЃќгЃ®гѓ•г‚Ўг‚¤гѓ«гЃЊгЃ™гЃ§гЃ«е­ењЁгЃ™г‚‹</item>
+			<item name="error_to_large">г‚Ёгѓ©гѓјпјљгЃќгЃ®гѓ•г‚Ўг‚¤гѓ«гЃЊе¤§гЃЌгЃ™гЃЋг‚‹</item>
+			<item name="remove">еЏ–г‚Љй™¤гЃЏ</item>
+		</group>
+
+		<group target="images">
+			<item name="title">г‚¤гѓЎгѓјг‚ёз®Ўзђ†</item>
+			<item name="subtitle">г‚¤гѓЎгѓјг‚ёз®Ўзђ†</item>
+			<item name="select_directory">гѓ•г‚©гѓ«гѓЂг‚’йЃёжЉћ:</item>
+			<item name="width">е№…:</item>
+			<item name="height">й«гЃ•:</item>
+			<item name="type">зЁ®йЎћ:</item>
+			<item name="size">г‚µг‚¤г‚є:</item>
+			<item name="scale">г‚№г‚±гѓјгѓ«:</item>
+			<item name="confirm_delete">е‰Љй™¤гЃ—гЃѕгЃ™гЃ‹?</item>
+			<item name="no_files">г‚¤гѓЎгѓјг‚ёгЃЊгЃ‚г‚ЉгЃѕгЃ›г‚“</item>
+			<item name="image">г‚¤гѓЎгѓјг‚ё</item>
+			<item name="bmp">BMPеЅўејЏ</item>
+			<item name="png">PNGеЅўејЏ</item>
+			<item name="jpg">JPEGеЅўејЏ</item>
+			<item name="gif">GIFеЅўејЏ</item>
+			<item name="tif">TIFFеЅўејЏ</item>
+			<item name="editwriteaccess">ж›ёиѕјгЃїжЁ©е€©гЃЊгЃ‚г‚ЉгЃѕгЃ›г‚“</item>
+		</group>
+
+		<group target="edit_image">
+			<item name="save_image">г‚¤гѓЎгѓјг‚ёг‚’дїќе­</item>
+			<item name="revert_image">дїќе­гЃ—гЃџг‚¤гѓЎгѓјг‚ёгЃ«ж€»г‚‹</item>
+			<item name="toggle_color">йЃёжЉћи‰Іг‚’дє¤жЏ›</item>
+			<item name="crop_image">е€‡г‚ЉжЉњгЃЌ</item>
+			<item name="resize_image">г‚¤гѓЎгѓјг‚ёг‚µг‚¤г‚єе¤‰ж›ґ</item>
+			<item name="please_wait">г‚¤гѓЎгѓјг‚ёг‚’ж•ґе‚™дё­</item>
+			<item name="constrain">зё¦жЁЄжЇ”г‚’е›єе®љ</item>
+			<item name="left">е·¦:</item>
+			<item name="top">дёЉ:</item>
+			<item name="width">е№…:</item>
+			<item name="height">й«гЃ•:</item>
+		</group>
+
+		<group target="preview">
+			<item name="title">гѓ—гѓ¬гѓ“гѓҐгѓј</item>
+			<item name="prev">е‰Ќ</item>	
+			<item name="next">ж¬Ў</item>	
+			<item name="keyboard_next">г‚·гѓ§гѓјгѓ€г‚«гѓѓгѓ€г‚­гѓј: г‚№гѓљгѓјг‚№,N,в†’,ж¬ЎгЃ®гѓљгѓјг‚ёгЃё</item>	
+			<item name="keyboard_prev">г‚·гѓ§гѓјгѓ€г‚«гѓѓгѓ€г‚­гѓј: P,в†ђ,е‰ЌгЃ®гѓљгѓјг‚ёгЃё</item>	
+		</group>
+	</language>
+</language-pack>

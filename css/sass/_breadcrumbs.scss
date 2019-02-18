@@ -1,0 +1,55 @@
+.breadcrumbs {
+    position: relative;
+    padding-bottom: 25px;
+    @include breakpoint (960) {
+        display: none;
+    }
+    a {
+        color: #686868;
+        font-size: 16px;
+        font-weight: $thin;
+        line-height: 1.68;
+        margin-right: 25px;
+        &:hover {
+            color: $orange;
+        }
+        &:active {
+            border-bottom: 1px solid $orange;
+        }
+        &:first-child {
+            border: none;
+            &:hover {
+                &:before {
+                    background-image: url(/images/smart/icons/svg/home-2.svg);
+                }
+            }
+            &:before {
+                content: '';
+                display: inline-block;
+                vertical-align: -1px;
+                background-image: url(/images/smart/icons/svg/home.svg);
+                width: 14px;
+                height: 14px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        &:after {
+            content: '';
+            display: inline-block;
+            background-image: url(/images/smart/small-arrow.png);
+            position: absolute;
+            width: 7px;
+            height: 10px;
+            margin-left: 15px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: 8px;
+        }
+        &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
